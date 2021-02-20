@@ -36,7 +36,7 @@
   {
     "name": "MCO",
     "brand": "ALM Busy Circuits",
-    "price": 155,
+    "price": 155.00,
     "summary": "Morphing 10-waveform wavetable oscillator with sub octave square output and sync input. Loud and clean AKM codec with 16b/48kHz resolution.",
     "category": "Oscillators",
     "specs": {
@@ -49,6 +49,91 @@
     },
     "image": null,
     "url": "https://busycircuits.com/alm021/"
+  },
+  {
+    "name": "Pamela's New Workout",
+    "brand": "ALM Busy Circuits",
+    "price": 259.00,
+    "summary": "Clock based modulation source with 8 outputs. Gates, envelopes, LFO's or quantized/smooth random selectable for each output.",
+    "category": "Modulators",
+    "specs": {
+      "+12V": 50,
+      "-12V": 0.5,
+      "+5V": 0,
+      "depth": 32,
+      "width": 8,
+      "height": 3
+    },
+    "image": null,
+    "url": "https://busycircuits.com/alm017/"
+  },
+  {
+    "name": "Dark Matter",
+    "brand": "Bastl Instruments",
+    "price": 315.00,
+    "summary": "Feedback processor made in collaboration with Casper Electronics. Input VCA has separate high/low clipping stages and envelope follower with self normalization to several parameters.",
+    "category": "Distortion",
+    "specs": {
+      "+12V": 75,
+      "-12V": 75,
+      "+5V": 0,
+      "depth": 24,
+      "width": 13,
+      "height": 3
+    },
+    "image": null,
+    "url": "https://bastl-instruments.com/eurorack/modules/dark-matter"
+  },
+  {
+    "name": "Warhorse",
+    "brand": "Arcaico",
+    "price": 240.00,
+    "summary": "Fully analog BBD-delay and Wasp-style multi-mode filter with integrated clipping distortion stage before the delay send.",
+    "category": "Distortion",
+    "specs": {
+      "+12V": 60,
+      "-12V": 35,
+      "+5V": 0,
+      "depth": 50,
+      "width": 16,
+      "height": 3
+    },
+    "image": null,
+    "url": "http://www.arcaico.eu/warhorse/"
+  },
+  {
+    "name": "Raverb",
+    "brand": "Arcaico",
+    "price": 190.00,
+    "summary": "Analog reverb with integrated VCA utilising BBD-delay chip. Post reverb clipping stage and separate outputs for wet and mix out.",
+    "category": "Sound processors",
+    "specs": {
+      "+12V": 60,
+      "-12V": 24,
+      "+5V": 0,
+      "depth": 50,
+      "width": 10,
+      "height": 3
+    },
+    "image": null,
+    "url": "http://www.arcaico.eu/raverb/"
+  },
+  {
+    "name": "Maths",
+    "brand": "Make Noise",
+    "price": 319.00,
+    "summary": "Analog computer consisting of 4 channels mixing section with individual attenuators and inverters and an output stage of OR/SUM/INV -logical functions. Channels 1 & 2 act as envelopes / lag generators with toggle cycle for LFO function.",
+    "category": "Utilities",
+    "specs": {
+      "+12V": 60,
+      "-12V": 50,
+      "+5V": 0,
+      "depth": 24,
+      "width": 20,
+      "height": 3
+    },
+    "image": null,
+    "url": "http://www.makenoisemusic.com/modules/maths"
   }
 
 ]
