@@ -1,0 +1,54 @@
+[
+  {
+    "name": "Akemie's Castle",
+    "brand": "ALM Busy Circuits",
+    "price": 535.00,
+    "summary": "Digital 4 operator FM oscillator featuring 6 algorithms and 2 separate voices with CV control of every parameter. Sound generated with original Yamaha IC's",
+    "category": "Oscillators",
+    "specs": {
+      "+12V": 120,
+      "-12V": 60,
+      "+5V": 0,
+      "depth": 32,
+      "width": 38,
+      "height": 3
+    },
+    "image": null,
+    "url": "https://busycircuits.com/alm011/"
+  },
+  {
+    "name": "Akemie's Taiko",
+    "brand": "ALM Busy Circuits",
+    "price": 285.00,
+    "summary": "Digital FM drum voice featuring original Yamaha IC sound generation.",
+    "category": "Drums",
+    "specs": {
+      "+12V": 70,
+      "-12V": 30,
+      "+5V": 0,
+      "depth": 32,
+      "width": 18,
+      "height": 3
+    },
+    "image": null,
+    "url": "https://busycircuits.com/alm015/"
+  },
+  {
+    "name": "MCO",
+    "brand": "ALM Busy Circuits",
+    "price": 155,
+    "summary": "Morphing 10-waveform wavetable oscillator with sub octave square output and sync input. Loud and clean AKM codec with 16b/48kHz resolution.",
+    "category": "Oscillators",
+    "specs": {
+      "+12V": 40,
+      "-12V": 15,
+      "+5V": 0,
+      "depth": 32,
+      "width": 6,
+      "height": 3
+    },
+    "image": null,
+    "url": "https://busycircuits.com/alm021/"
+  }
+
+]
