@@ -4,6 +4,7 @@
 **Etusivu muutos**
 - Tuotteet <a> linkeiksi joiden background-image tuotekuva
 - Isommat kuvakkeet, moderni look
+- Kuvakkeissa "hacky" tapa saada "on hover" kuva. Background-image ja img elementti päällekkäin
 - Tuotteet Json Arraysta
 - Tuotteet tuodaan satunnaisesti näyteikkunaan Json arraysta
 
