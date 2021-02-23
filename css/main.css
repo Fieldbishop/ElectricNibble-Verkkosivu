@@ -40,7 +40,6 @@ header {
     position: absolute;
     bottom: 0;
 }
-
 .sticky {
     position: fixed;
     top: 0;
@@ -96,12 +95,20 @@ article figure {
 
 }
 
-.productImg:hover {
-    filter: brightness(150%);
+.productImg:hover > img {
+    visibility: visible;
+    object-fit: cover;
+    width: inherit;
 }
 
-main article p {
+main article p{
     margin: 0;
+}
+
+a img {
+    visibility: hidden;
+    height: 100%;
+
 }
 
 
