@@ -1,5 +1,5 @@
-#Changelog#
-##23.2.2021##
+# Changelog
+## 23.2.2021
 
 **Etusivu muutos**
 - Tuotteet <a> linkeiksi joiden background-image tuotekuva
