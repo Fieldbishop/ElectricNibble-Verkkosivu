@@ -32,6 +32,7 @@ header {
     position: fixed;
     top: 10px;
     width: 100%;
+    font-size: 20px;
 }
 
 header a {
@@ -39,7 +40,9 @@ header a {
     text-align: center;
     padding: 14px;
     text-decoration: none;
-
+    display: inline;
+    padding-right: 100px;
+    padding-left: 100px;
 }
 
 header a:hover {
@@ -79,7 +82,8 @@ article {
 }
 
 .pImg {
-    max-width: 75%;
+    max-width: 350px;
+    max-height: 350px;
     border: 2px solid #111111;
 }
 
@@ -90,6 +94,14 @@ article {
     animation-duration: 1.5s;
     -webkit-transform: scale(-1);
     transform: scaleX(-1);
+}
+
+.name{
+    font-size: 25px;
+}
+
+.hinta{
+    font-size: 20px;
 }
 
 @-webkit-keyframes fade {
@@ -113,4 +125,18 @@ footer img {
     position: relative;
     top: 25px;
     left: 25px;
+}
+
+@media screen and (max-width: 50em) {
+
+    body {
+        max-width: 100%;
+        margin: auto;
+    }
+
+   main{
+       width: 70%;
+       height: 70%;
+   }
+
 }
