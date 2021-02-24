@@ -1,0 +1,50 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: crimson;
+    width: 100%;
+}
+
+.nonSticky {
+    position: absolute;
+    bottom: 0;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+}
+
+header a {
+    color: #111111;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+
+}
+
+header a:hover {
+    background-color: black;
+    color: aliceblue;
+}
+
+
+footer {
+    margin-top: 35px;
+    background: #eeeeee;
+    min-height: 250px;
+    display: flex;
+}
+
+footer img {
+    max-height: 100px;
+    position: relative;
+    top: 25px;
+    left: 25px;
+}
