@@ -1,0 +1,129 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: #be0000;
+    width: 100%;
+    font-size: 25px;
+}
+
+.nonSticky {
+    position: absolute;
+    bottom: 0;
+    justify-content: start;
+    text-align: center;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+}
+
+header a {
+    color: #111111;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    display: inline;
+    padding-right: 100px;
+    padding-left: 100px;
+    font-family: BioRhyme;
+    font-size: 28px;
+}
+
+header a:hover {
+    background-color: black;
+    color: aliceblue;
+
+}
+
+#logo {
+    max-height: 80px;
+    margin: 0 auto;
+}
+
+header figure{
+    max-height: 80px;
+    margin: 5px;
+    padding-left: 35px;
+}
+
+#linkit{
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 23px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.product {
+    width: 30vw;
+    height: 31vw;
+
+    box-sizing: border-box;
+    margin-top: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+article figure {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.productImg {
+    height: 700px;
+    width: 700px;
+    margin-top: 50px;
+
+    background-size: cover;
+    display: inline-block;
+
+}
+
+
+.productImg:hover > img {
+    visibility: visible;
+    object-fit: cover;
+    width: inherit;
+}
+
+main article p{
+    margin: 0;
+    font-size: 20px;
+}
+
+a img {
+    visibility: hidden;
+    height: 100%;
+
+}
+
+
+footer {
+    margin-top: 35px;
+    background: #bebebe;
+    min-height: 250px;
+    display: flex;
+}
+
+footer img {
+    max-height: 100px;
+    position: relative;
+    top: 25px;
+    left: 10px;
+}
