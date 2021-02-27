@@ -59,52 +59,28 @@ header figure{
 }
 
 main {
+    margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.product {
-    width: 30vw;
-    height: 31vw;
-
-    box-sizing: border-box;
-    margin-top: 10px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-
-}
-
-article figure {
-    height: 100%;
-    width: 100%;
-    margin: 0;
-}
-
-.productImg {
-    height: 700px;
-    width: 700px;
-    margin-top: 50px;
-
-    background-size: cover;
-    display: inline-block;
-
-}
-
-
-.productImg:hover > img {
-    visibility: visible;
-    object-fit: cover;
-    width: inherit;
+    justify-content: start;
 }
 
 main article p{
-    margin: 0;
+    max-width: 1000px;
+    margin-left: 200px;
     font-size: 20px;
+    font-family: Space Mono;
+}
+
+#Mondo{
+    margin-top: 0px;
+    margin-left: 50px;
+}
+
+#sijainti{
+    display: flex;
+    margin-left: 60%;
+    margin-top: 100px;
 }
 
 a img {
@@ -113,17 +89,44 @@ a img {
 
 }
 
-
 footer {
     margin-top: 35px;
     background: #bebebe;
-    min-height: 250px;
+    min-height: 200px;
     display: flex;
 }
 
 footer img {
     max-height: 100px;
     position: relative;
-    top: 25px;
+    top: 30px;
     left: 10px;
+}
+
+footer figure{
+    height: 100px;
+    width: 100px;
+
+}
+
+footer article{
+    margin: 0;
+    height: 50px;
+}
+
+footer article p{
+    font-family: Space Mono;
+    font-size: 22px;
+    margin-top: 80px;
+    height: 100px;
+}
+
+#nimet{
+    position: relative;
+    left:65%;
+    bottom: 35px;
+}
+
+#nimet p{
+    font-size: 18px;
 }

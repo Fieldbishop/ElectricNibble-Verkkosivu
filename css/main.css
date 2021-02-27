@@ -26,14 +26,7 @@ body, html {
 #ye h3, #ye p {
     margin: 3px;
     font-size: 1.5vw;
-}
-
-
-header {
-    display: flex;
-    justify-content: center;
-    background-color: crimson;
-    width: 100%;
+    font-family: Space Mono;
 }
 
 .nonSticky {
@@ -47,6 +40,14 @@ header {
     top: 0;
 }
 
+header {
+    display: flex;
+    justify-content: center;
+    background-color: #be0000;
+    width: 100%;
+    font-size: 25px;
+}
+
 header a {
     color: #111111;
     text-align: center;
@@ -55,49 +56,45 @@ header a {
     display: inline;
     padding-right: 100px;
     padding-left: 100px;
-    font-size: 22px;
-    margin-top: 28px;
+    font-family: BioRhyme;
+    font-size: 28px;
 }
 
 header a:hover {
     background-color: black;
     color: aliceblue;
+
 }
 
 #logo {
-    max-height: 80px;
-    margin: 0 auto;
+    max-height: 100px;
+    position: relative;
+    bottom: 15px;
+
 }
 
 header figure{
-    max-height: 80px;
-    margin: 5px;
-    padding-left: 35px;
+    height: 70px;
 }
 
 #linkit{
     justify-content: center;
     margin: 0 auto;
-    padding-top: 28px;
-}
-
-#about{
-    justify-content: center;
+    padding-top: 40px;
 }
 
 main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin: 20px;
 }
 
 .product {
     width: 30vw;
     height: 31vw;
-
     box-sizing: border-box;
     margin-top: 10px;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -112,16 +109,15 @@ article figure {
     margin: 0;
 }
 
+
 .productImg {
-    height: 700px;
-    width: 700px;
+    height: 100%;
+    width: 100%;
     margin-top: 50px;
 
     background-size: cover;
     display: inline-block;
-
 }
-
 
 .productImg:hover > img {
     visibility: visible;
@@ -130,7 +126,8 @@ article figure {
 }
 
 main article p{
-    margin: 0;
+    margin-top: 60px;
+    font-family: Space Mono;
     font-size: 20px;
 }
 
@@ -140,17 +137,45 @@ a img {
 
 }
 
-
 footer {
     margin-top: 35px;
-    background: #eeeeee;
-    min-height: 250px;
+    background: #bebebe;
+    min-height: 200px;
     display: flex;
 }
 
 footer img {
     max-height: 100px;
     position: relative;
-    top: 25px;
-    left: 25px;
+    top: 30px;
+    left: 10px;
+}
+
+footer figure{
+    height: 100px;
+    width: 100px;
+
+}
+
+footer article{
+    margin: 0;
+    height: 50px;
+}
+
+footer article p{
+    font-family: Space Mono;
+    font-size: 22px;
+    margin-top: 80px;
+    height: 100px;
+}
+
+#nimet{
+    position: relative;
+    left:65%;
+    bottom: 30px;
+}
+
+
+#nimet p{
+    font-size: 18px;
 }
