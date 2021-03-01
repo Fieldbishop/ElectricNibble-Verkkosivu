@@ -96,19 +96,35 @@ article figure {
 }
 
 .productImg:hover > img {
-    visibility: visible;
-    object-fit: cover;
-    width: inherit;
-}
+    opacity: 1;
 
-main article p{
-    margin: 0;
 }
 
 a img {
-    visibility: hidden;
+    opacity: 0;
+    object-fit: cover;
+    width: inherit;
     height: 100%;
+    transition: opacity .5s ease-out 100ms;
+}
 
+.animated {
+    margin: 0;
+    padding: 3px;
+    width: auto;
+    background: white;
+    position: relative;
+    bottom: 0;
+    transition: bottom .5s ease-out 100ms;
+}
+
+.product:hover .animated {
+    bottom: 45px;
+}
+
+.animated p {
+    margin: 0;
+    padding: 0;
 }
 
 

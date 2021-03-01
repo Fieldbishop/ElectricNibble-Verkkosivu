@@ -11,11 +11,6 @@ header {
     width: 100%;
 }
 
-.nonSticky {
-    position: absolute;
-    bottom: 0;
-}
-
 .sticky {
     position: fixed;
     top: 0;
@@ -32,6 +27,121 @@ header a {
 header a:hover {
     background-color: black;
     color: aliceblue;
+}
+
+.circle {
+    height: 35px;
+    width: 35px;
+    background-color: #eeeeee;
+    border-radius: 45%;
+}
+
+.circle:hover {
+    background-color: #111111;
+}
+
+
+aside {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: -25vw;
+    top: 10%;
+    width: auto;
+    border: 2px solid #111111;
+    background: beige;
+    transition: all 0.75s 0.25s;
+}
+
+.open {
+    left: 1vw;
+}
+
+aside ul {
+    list-style: none;
+}
+
+aside ul li {
+    padding: 3px;
+}
+
+aside ul li:hover {
+    cursor:pointer;
+    background: aqua;
+}
+
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+main div {
+    height: 50px;
+    width: 100%;
+}
+
+.product {
+    flex: 1 0 21%;
+    margin: 3px;
+    height: 25vw;
+
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+article figure {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.productImg {
+    height: 100%;
+    width: 100%;
+
+    background-size: cover;
+    display: inline-block;
+
+}
+
+.productImg:hover > img {
+    opacity: 1;
+
+}
+
+a img {
+    opacity: 0;
+    object-fit: cover;
+    width: inherit;
+    height: 100%;
+    transition: opacity .5s ease-out 100ms;
+}
+
+.animated {
+    margin: 0;
+    padding: 3px;
+    width: auto;
+    background: white;
+    position: relative;
+    bottom: 0;
+    transition: bottom .5s ease-out 100ms;
+}
+
+.product:hover .animated {
+    bottom: 45px;
+}
+
+.animated p {
+    margin: 0;
+    padding: 0;
 }
 
 

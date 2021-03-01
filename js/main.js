@@ -51,28 +51,45 @@ function mainPage(json) {
         let a = document.createElement('a');
         a.className = 'productImg';
         a.id = String(num[i]);
+        a.href = '#product' + num[i];
 
         let img = document.createElement('img');
         img.src = json[num[i]].picture.kaksi;
         a.appendChild(img);
 
+        let infoContainer = document.createElement('div');
         let name = document.createElement('p');
         let price = document.createElement('p');
 
-        a.href = '#product' + num[i];
+        infoContainer.className = "animated";
 
         figure.appendChild(a);
 
         name.appendChild(document.createTextNode(json[num[i]].name));
         price.appendChild(document.createTextNode(json[num[i]].price + "€"));
 
+        infoContainer.appendChild(name);
+        infoContainer.appendChild(price);
+        figure.appendChild(infoContainer);
         article.appendChild(figure);
-        article.appendChild(name);
-        article.appendChild(price);
 
         main.appendChild(article);
         document.getElementById(String(num[i])).style.backgroundImage = "url('" + json[num[i]].picture.yksi + "')";
     }
+
+    /*
+    <article class="product">
+    <figure>
+        <a class="productImg" href="#product0" style="background-image: url('img/.jpg');">
+            <img src="img/.jpg">
+        </a>
+        <div class="animated">
+            <p>Name</p>
+            <p>Price</p>
+        </div>
+    </figure>
+    </article>
+     */
 
 }
 

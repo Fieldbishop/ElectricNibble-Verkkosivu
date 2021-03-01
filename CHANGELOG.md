@@ -1,4 +1,14 @@
 # Changelog
+
+## 1.3.2021
+
+**Etusivu**
+- Tuotteilla popup jossa näkyy nimi ja hinta
+- Tuotekuvat käyttävät opacitya vaihtuakseen
+
+**Products Sivu**
+- Kategoria sivu-ikkuna
+
 ## 23.2.2021
 
 **Etusivu muutos**
