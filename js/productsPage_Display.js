@@ -51,24 +51,3 @@ fetch(source)
 
 
 
-/*
-for (let i = 0; i < modules.length; i++) {
-    console.log(modules[i].);
-    
-    
-    let article = document.createElement('article');
-    article.className = "product";
-    let fig = document.createElement('figure');
-    let a = document.createElement('a');
-    a.id = '$i';
-    a.className = "productImg";
-    a.href = "$product0"
-    a.style = "background-image: url('img/samBot.jpg');"
-    image = document.createElement('img');
-    image.src = "img/lmmao.jpg"
-    a.appendChild(image);
-    fig.appendChild(a);
-    div.appendChild(fig);
-
-}
-*/
