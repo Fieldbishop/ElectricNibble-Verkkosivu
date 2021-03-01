@@ -3,11 +3,18 @@
 ## 1.3.2021
 
 **Etusivu**
-- Tuotteilla popup jossa näkyy nimi ja hinta
-- Tuotekuvat käyttävät opacitya vaihtuakseen
+- Animaatiot tuotteisiin
+- Tyylittely lisätty etusivulle
 
 **Products Sivu**
-- Kategoria sivu-ikkuna
+- Sivu luotu
+- Sivupalkki, jonka voi piilottaa
+- Sivupalkki näyttää halutun kategorian kaikki tuotteet
+- Animaatiot tuotteisiin ja sivupalkkiin
+
+**About Us sivu**
+- Sivu luotu
+- Pohja rakennettu, sisältö tarvitaan
 
 ## 23.2.2021
 
