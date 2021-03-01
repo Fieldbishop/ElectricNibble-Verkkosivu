@@ -7,7 +7,7 @@ body, html {
 header {
     display: flex;
     justify-content: center;
-    background-color: crimson;
+    background-color: #be0000;
     width: 100%;
 }
 
@@ -21,12 +21,32 @@ header a {
     text-align: center;
     padding: 14px;
     text-decoration: none;
-
+    display: inline;
+    padding-right: 100px;
+    padding-left: 100px;
+    font-family: BioRhyme;
+    font-size: 28px;
 }
 
 header a:hover {
     background-color: black;
-    color: aliceblue;
+}
+
+#logo {
+    max-height: 80px;
+    margin: 0 auto;
+}
+
+header figure{
+    max-height: 80px;
+    margin: 5px;
+    padding-left: 35px;
+}
+
+#linkit{
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 23px;
 }
 
 .circle {
@@ -147,14 +167,42 @@ a img {
 
 footer {
     margin-top: 35px;
-    background: #eeeeee;
-    min-height: 250px;
+    background: #bebebe;
+    min-height: 200px;
     display: flex;
 }
 
 footer img {
     max-height: 100px;
     position: relative;
-    top: 25px;
-    left: 25px;
+    top: 30px;
+    left: 10px;
+}
+
+footer figure{
+    height: 100px;
+    width: 100px;
+
+}
+
+footer article{
+    margin: 0;
+    height: 50px;
+}
+
+footer article p{
+    font-family: Space Mono;
+    font-size: 22px;
+    margin-top: 80px;
+    height: 100px;
+}
+
+#nimet{
+    position: relative;
+    left:65%;
+    bottom: 35px;
+}
+
+#nimet p{
+    font-size: 18px;
 }

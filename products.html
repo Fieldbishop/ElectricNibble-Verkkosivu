@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link href="css/products.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=BioRhyme|Space Mono' rel='stylesheet'>
 </head>
-<body>
 
 <main>
     <div>
@@ -110,11 +110,13 @@
 </main>
 
 
-<header class="sticky">
-    <div class="circle"></div>
-    <a href="#home">Home</a>
-    <a href="#products">Products</a>
-    <a href="#about">About us</a>
+<header>
+    <figure><img id="logo" src="./img/logo.png"></figure>
+    <figure id="linkit">
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#about">About us</a>
+    </figure>
 </header>
 
 <footer>
@@ -122,19 +124,14 @@
     <article>
         <p>Electric nibble</p>
     </article>
+    <article id="nimet">
+        <p>Sampo Bredenberg <br/> Jaakko Nahkala <br/> Lassi Piispanen <br/> Niklas Kukkonen</p>
+    </article>
 
 </footer>
 
-<aside id="sidebar">
-    <ul>
-        <li>A-Moduulit</li>
-        <li>B-Moduulit</li>
-        <li>C-Moduulit</li>
-        <li>D-Moduulit</li>
-        <li>E-Moduulit</li>
-    </ul>
-</aside>
-
 <script src="js/products.js"></script>
+<script src="js/sticky.js"></script>
 </body>
+
 </html>
