@@ -1,0 +1,496 @@
+[
+  {
+    "name": "Akemie's Castle",
+    "brand": "ALM Busy Circuits",
+    "price": 535.00,
+    "description": "Digital 4 operator FM oscillator featuring 6 algorithms and 2 separate voices with CV control of every parameter. Sound generated with original Yamaha IC's",
+    "category": "Oscillator",
+    "specs":
+    {
+      "+12V": 120,
+      "-12V": 60,
+      "+5V": 0,
+      "depth": 32,
+      "width": 38,
+      "height": 3
+    },
+    "imageMain": null,
+    "imageSide": null,
+    "url": "https://busycircuits.com/alm011/"
+  },
+  {
+    "name": "Akemie's Taiko",
+    "brand": "ALM Busy Circuits",
+    "price": 285.00,
+    "description": "Digital FM drum voice featuring original Yamaha IC sound generation.",
+    "category": "Percussion",
+    "specs":
+    {
+      "+12V": 70,
+      "-12V": 30,
+      "+5V": 0,
+      "depth": 32,
+      "width": 18,
+      "height": 3
+    },
+    "imageMain": null,
+    "imageSide": null,
+    "url": "https://busycircuits.com/alm015/"
+  },
+  {
+    "name": "MCO",
+    "brand": "ALM Busy Circuits",
+    "price": 155.00,
+    "description": "Morphing 10-waveform wavetable oscillator with sub octave square output and sync input. Loud and clean AKM codec with 16b/48kHz resolution.",
+    "category": "Oscillator",
+    "specs":
+    {
+      "+12V": 40,
+      "-12V": 15,
+      "+5V": 0,
+      "depth": 32,
+      "width": 6,
+      "height": 3
+    },
+    "imageMain": null,
+    "imageSide": null,
+    "url": "https://busycircuits.com/alm021/"
+  },
+  {
+    "name": "Pamela's New Workout",
+    "brand": "ALM Busy Circuits",
+    "price": 259.00,
+    "description": "Clock based modulation source with 8 outputs. Gates, envelopes, LFO's or quantized/smooth random selectable for each output.",
+    "category": "Modulator",
+    "specs":
+    {
+      "+12V": 50,
+      "-12V": 0.5,
+      "+5V": 0,
+      "depth": 32,
+      "width": 8,
+      "height": 3
+    },
+    "imageMain": null,
+    "imageSide": null,
+    "url": "https://busycircuits.com/alm017/"
+  },
+  {
+    "name": "Dark Matter",
+    "brand": "Bastl Instruments",
+    "price": 315.00,
+    "description": "Feedback processor made in collaboration with Casper Electronics. Input VCA has separate high/low clipping stages and envelope follower with self normalization to several parameters.",
+    "category": "Distortion",
+    "specs":
+    {
+      "+12V": 75,
+      "-12V": 75,
+      "+5V": 0,
+      "depth": 24,
+      "width": 13,
+      "height": 3
+    },
+    "imageMain": null,
+    "imageSide": null,
+    "url": "https://bastl-instruments.com/eurorack/modules/dark-matter"
+  },
+  {
+    "name": "Warhorse",
+    "brand": "Arcaico",
+    "price": 240.00,
+    "description": "Fully analog BBD-delay and Wasp-style multi-mode filter with integrated clipping distortion stage before the delay send.",
+    "category": "Delay",
+    "specs":
+    {
+      "+12V": 60,
+      "-12V": 35,
+      "+5V": 0,
+      "depth": 50,
+      "width": 16,
+      "height": 3
+    },
+    "imageMain": null,
+    "imageSide": null,
+    "url": "http://www.arcaico.eu/warhorse/"
+  },
+  {
+    "name": "Raverb",
+    "brand": "Arcaico",
+    "price": 190.00,
+    "description": "Analog reverb with integrated VCA utilising BBD-delay chips. Post reverb clipping stage and separate outputs for wet and mix out.",
+    "category": "Reverb",
+    "specs":
+    {
+      "+12V": 60,
+      "-12V": 24,
+      "+5V": 0,
+      "depth": 50,
+      "width": 10,
+      "height": 3
+    },
+    "imageMain": null,
+    "imageSide": null,
+    "url": "http://www.arcaico.eu/raverb/"
+  },
+  {
+    "name": "Maths w/ black Grayscale aluminium panel",
+    "brand": "Make Noise",
+    "price": 319.00,
+    "description": "Analog computer consisting of 4 channels mixing section with individual attenuators and inverters and an output stage of OR/SUM/INV -logical functions. Channels 1 & 2 act as envelopes / lag generators with toggle cycle for LFO function.",
+    "category": "Utility",
+    "specs":
+    {
+      "+12V": 60,
+      "-12V": 50,
+      "+5V": 0,
+      "depth": 24,
+      "width": 20,
+      "height": 3
+    },
+    "imageMain": null,
+    "imageSide": null,
+    "url": "http://www.makenoisemusic.com/modules/maths"
+  },
+  {
+    "name": "Disting MK4",
+    "brand": "Expert Sleepers",
+    "price": 162.00,
+    "description": "Jack of all trades -module boasting 60 user selectable algorithms. Can be used in almost any conceivable way from LFO, waveshaper, delay to sample player and much more.",
+    "category": "Utility",
+    "specs":
+    {
+      "+12V": 50,
+      "-12V": 20,
+      "+5V": 0,
+      "depth": 42,
+      "width": 4,
+      "height": 3
+    },
+    "imageMain": null,
+    "imageSide": null,
+    "url": "https://www.expert-sleepers.co.uk/disting.html"
+  },
+  {
+    "name": "Lollipop",
+    "brand": "God's Box",
+    "price": 219.00,
+    "description": "Vactrol/FET -based analog compressor. Settings for attack/release, threshold and dry/wet mix, LED display of compression amount.",
+    "category": "Compressor",
+    "specs":
+    {
+      "+12V": 120,
+      "-12V": 45,
+      "+5V": 0,
+      "depth": 24,
+      "width": 12,
+      "height": 3
+    },
+    "imageMain": null,
+    "imageSide": null,
+    "url": "https://www.godsbox.co.uk/lollipop.html"
+  },
+  {
+    "name": "Tallin",
+    "brand": "XAOC Devices",
+    "price": 159.00,
+    "description": "Dual analog VCA with both linear and exponential CV control available simultaneously. User selectable linear, symmetric or asymmetric soft stage activates beyond 18Vpp and distorts the signal reminiscent of tube saturation or fuzz pedal.",
+    "category": "VCA",
+    "specs":
+    {
+      "+12V": 50,
+      "-12V": 50,
+      "+5V": 0,
+      "depth": 35,
+      "width": 6,
+      "height": 3
+    },
+    "imageMain": null,
+    "imageSide": null,
+    "url": "http://xaocdevices.com/main/tallin/"
+  },
+  {
+    "name": "Batumi",
+    "brand": "XAOC Devices",
+    "price": 279.00,
+    "description": "Quadruple clock syncable LFO. Simultaneous sine, square and saw outputs. Saw output configurable to trapezoid or triangle. Four different run modes and upgradeable firmware.",
+    "category": "Modulator",
+    "specs":
+    {
+      "+12V": 45,
+      "-12V": 15,
+      "+5V": 0,
+      "depth": 45,
+      "width": 10,
+      "height": 3
+    },
+    "imageMain": null,
+    "imageSide": null,
+    "url": "http://xaocdevices.com/main/batumi/"
+  },
+  {
+    "name": "Ataraxic Iteritas",
+    "brand": "Noise Engineering",
+    "price": 367.00,
+    "description": "Digital Lo-Fi oscillator capable of generating a large spectra of digital-sounding tones. Sound is generated by a linear feedback shift register that is disrupted by inverting the bits in the table. Three different modes, asymmetric wavefolder, comb-filter, sync input and octave switch... Among other things!",
+    "category": "Oscillator",
+    "specs":
+    {
+      "+12V": 80,
+      "-12V": 5,
+      "+5V": 90,
+      "depth": 38,
+      "width": 10,
+      "height": 3
+    },
+    "imageMain": null,
+    "imageSide": null,
+    "url": "https://www.noiseengineering.us/shop/ataraxic-iteritas"
+  },
+  {
+    "name": "Manis Iteritas",
+    "brand": "Noise Engineering",
+    "price": 378.00,
+    "description": "Six operator digital oscillator using only sawtooth waves. Based on the architecture of the renowned drum voice Basimilus Iteritas Alter. Three different modes of operation from additive synthesis to six operator FM. Integrated envelope generator that acts on an incoming trigger, and self-modulation with envelope send to several parameters.",
+    "category": "Percussion",
+    "specs":
+    {
+      "+12V": 150,
+      "-12V": 5,
+      "+5V": 90,
+      "depth": 38,
+      "width": 10,
+      "height": 3
+    },
+    "imageMain": null,
+    "imageSide": null,
+    "url": "https://www.noiseengineering.us/shop/manis-iteritas"
+  },
+  {
+    "name": "Basimilus Iteritas Alter",
+    "brand": "Noise Engineering",
+    "price": 388.00,
+    "description": "Legendary drum voice capable of additive and six operator FM synthesis. Spreadable and scalable harmonic content and wavefolder. Three different modes and an octave switch.",
+    "category": "Percussion",
+    "specs":
+    {
+      "+12V": 150,
+      "-12V": 5,
+      "+5V": 90,
+      "depth": 38,
+      "width": 10,
+      "height": 3
+    },
+    "imageMain": null,
+    "imageSide": null,
+    "url": "https://www.noiseengineering.us/shop/basimilus-iteritas-alter"
+  },
+  {
+    "name": "Desmodus Versio",
+    "brand": "Noise Engineering",
+    "price": 353.00,
+    "description": "User programmable DSP-platform with several Noise Engineering alternate firmwares. Module's brain is the Daisy Seed from Electrosmith. Desmodus comes packed with three different reverb algorithms: filtered feedback clean tail generator, unfiltered distorting and characterful tail generator, and lastly a harmonic pitch-shifter shimmer reverb.",
+    "category": "Effects processor",
+    "specs":
+    {
+      "+12V": 70,
+      "-12V": 70,
+      "+5V": 0,
+      "depth": 39,
+      "width": 0,
+      "height": 3
+    },
+    "imageMain": null,
+    "imageSide": null,
+    "url": "https://www.noiseengineering.us/shop/desmodus-versio"
+  },
+  {
+    "name": "Sinc Bucina",
+    "brand": "Noise Engineering",
+    "price": 162.00,
+    "description": "Resonant LPG with both gate and trigger inputs. Generated envelope excites a low pass filter with selectable modes: 12db cutoff per octave without resonance and 6db cutoff with harsh resonance. Can also act as a simple VCA with 0db-mode.",
+    "category": "LPG",
+    "specs":
+    {
+      "+12V": 45,
+      "-12V": 40,
+      "+5V": 0,
+      "depth": 24,
+      "width": 4,
+      "height": 3
+    },
+    "imageMain": null,
+    "imageSide": null,
+    "url": "https://schneidersladen.de/de/noise-engineering-sinc-bucina"
+  },
+  {
+    "name": "Vortices",
+    "brand": "Steady State Fate",
+    "price": 388.00,
+    "description": "Vintage analog recording equipment simulating mixer with 4 mono and 3 stereo channels. Includes 2hp VCA expander. Mono channels saturate pleasantly and stereo channels have a mid-cut characteristic. Crazy amount of possible feedback patches with separate mono, stereo and master outs. Ridiculously good sounding mixer.",
+    "category": "Mixer",
+    "specs":
+    {
+      "+12V": 110,
+      "-12V": 105,
+      "+5": 0,
+      "depth": 26,
+      "width": 16,
+      "height": 3
+    },
+    "imageMain": null,
+    "imageSide": null,
+    "url": "http://www.steadystatefate.com/vortices"
+  },
+  {
+    "name": "Autodyne",
+    "brand": "Steady State Fate",
+    "price": 219.00,
+    "description": "Analog compressor that has a unique one-knob compress potentiometer with adaptive time constant. Includes sidechain input for ducking sounds. Optional sidechain filtering selectable. Capable of analog saturation in the upper ranges of the gain potentiometer.",
+    "category": "Compressor",
+    "specs":
+    {
+      "+12V": 60,
+      "-12V": 50,
+      "+5V": 0,
+      "depth": 26,
+      "width": 4,
+      "height": 3
+    },
+    "imageMain": null,
+    "imageSide": null,
+    "url": "http://www.steadystatefate.com/newss/2019/5/28/autodyne-starts-shipping-first-week-of-june-2019?rq=autodyne"
+  },
+  {
+    "name": "MSCL",
+    "brand": "WMD",
+    "price": 199.00,
+    "description": "Stereo compressor especially suitable for master bus compression or tying submixes together.",
+    "category": "Compressor",
+    "specs":
+    {
+      "+12V": 50,
+      "-12": 50,
+      "+5V": 0,
+      "depth": 38,
+      "width": 4,
+      "height": 3
+    },
+    "imageMain": null,
+    "imageSide": null,
+    "url": "https://wmdevices.com/products/mscl"
+  },
+  {
+    "name": "C4RBN",
+    "brand": "WMD",
+    "price": 194.00,
+    "description": "State variable 2 / 4 -pole filter. Three independent outputs for 2-pole low, high and bandpass filters. 4-pole filter selectable between the three paradigms. Optional saturation stages and a wavefolder for the 4-pole output.",
+    "category": "Filter",
+    "specs":
+    {
+      "+12V": 92,
+      "-12V": 82,
+      "+5V": 0,
+      "depth": 38,
+      "width": 4,
+      "height": 3
+    },
+    "imageMain": null,
+    "imageSide": null,
+    "url": "https://wmdevices.com/products/c4rbn"
+  },
+  {
+    "name": "Nerdseq",
+    "brand": "XOR Electronics",
+    "price": 598.00,
+    "description": "King of Eurorack sequencers. Six channels of individual CV, GATE and MOD outs, vast programing possibilities in the tracker-style sequencer page for each channel. Has an additional two channels for audio samples or Nerdseq-generated waveforms",
+    "category": "Sequencer",
+    "specs":
+    {
+      "+12V": 150,
+      "-12V": 40,
+      "+5V": 0,
+      "depth": 35,
+      "width": 32,
+      "height": 3
+    },
+    "imageMain": null,
+    "imageSide": null,
+    "url": "https://xor-electronics.com/nerdseq/"
+  },
+  {
+    "name": "uO_C  (Micro Ornament & Crime)",
+    "brand": "Michigan Synth Works",
+    "price": 259.00,
+    "description": "Multifunction CV generator. Four channels of CV & GATE ins feeding into four outputs. Several algorithms to choose from and hackable, open firmware.",
+    "category": "Modulator",
+    "specs":
+    {
+      "+12V": 85,
+      "-12V": 10,
+      "+5V": 0,
+      "depth": 35,
+      "width": 8,
+      "height": 3
+    },
+    "imageMain": null,
+    "imageSide": null,
+    "url": "https://ornament-and-cri.me/"
+  },
+  {
+    "name": "Digiverb",
+    "brand": "Intellijel",
+    "price": 77.00,
+    "description": "Characterful digital Lo-Fi spring reverb emulation based on an Accutronic reverb tank. Controls for decay and mix.",
+    "category": "Reverb",
+    "specs":
+    {
+      "+12V": 72,
+      "-12V": 17,
+      "+5V": 0,
+      "depth": 45,
+      "width": 14,
+      "height": 1
+    },
+    "imageMain": null,
+    "imageSide": null,
+    "url": "https://intellijel.com/shop/eurorack/1u/digiverb-1u/"
+  },
+  {
+    "name": "Multi-FX",
+    "brand": "Intellijel",
+    "price": 138.00,
+    "description": "Three effect algorithms in a small footprint. Tap delay, chorus and shimmer reverb. Stereo input and output for all modes, but the tap-delay effect sums the channels before delay.",
+    "category": "Effects processor",
+    "specs":
+    {
+      "+12V": 130,
+      "-12V": 12,
+      "+5V": 0,
+      "depth": 33,
+      "width": 24,
+      "height": 1
+    },
+    "imageMain": null,
+    "imageSide": null,
+    "url": "https://intellijel.com/shop/eurorack/1u/multi-fx-1u/"
+  },
+  {
+    "name": "Prism",
+    "brand": "Qu-Bit",
+    "price": 216.00,
+    "description": "Stereo signal processor with integrated filter and clock-syncable delay line. Freeze input and push button for holding audio buffer in place. Potentiometer for setting bit depth of the processed signal.",
+    "category": "Effects processor",
+    "specs":
+    {
+      "+12V": 90,
+      "-12V": 10,
+      "+5V": 0,
+      "depth": 22,
+      "width": 12,
+      "height": 3
+    },
+    "imageMain": null,
+    "imageSide": null,
+    "url": "https://www.qubitelectronix.com/shop/prism"
+  }
+]
