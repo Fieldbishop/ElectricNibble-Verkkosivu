@@ -48,6 +48,9 @@ function mainPage(json) {
 
         let article = document.createElement('article');
         article.className = "product";  //product class
+        article.addEventListener('click', function(){
+            console.log(num[i]);
+        });
 
         let figure = document.createElement('figure');
         let a = document.createElement('a');

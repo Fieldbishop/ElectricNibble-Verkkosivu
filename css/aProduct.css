@@ -1,0 +1,38 @@
+#tuoteInfoDiv article{
+    display: flex;
+    justify-content: center;
+
+}
+#teksti{
+    width: 50%;
+}
+
+figure{
+
+}
+ul{
+    list-style-type:circle;
+}
+
+#tuoteInfoDiv article h2,#tuoteInfoDiv article p{
+    max-width: 1000px;
+    margin-left: 200px;
+    font-size: 20px;
+    font-family: Space Mono;
+}
+#tuoteInfoDiv article button{
+    max-width: 1000px;
+    margin-left: 200px;
+    font-size: 18px;
+    font-family: Space Mono;
+}
+.hinta{
+    font-weight: bold;
+}
+
+#tuoteInfoDiv article li{
+    max-width: 1000px;
+    margin-left: 200px;
+    font-size: 18px;
+    font-family: Space Mono;
+}

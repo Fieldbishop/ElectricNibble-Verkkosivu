@@ -137,6 +137,9 @@ function updateProducts(json, num) {
 
             let article = document.createElement('article');
             article.className = 'product';
+            article.addEventListener('click', function(){
+                console.log(i);
+            });
 
             let figure = document.createElement('figure');
             let a = document.createElement('a');
