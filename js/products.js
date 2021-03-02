@@ -122,7 +122,7 @@ function updateProducts(json, num) {
 
         } else if (num === 9 && json[i].category !== 'Oscillator') {
 
-        } else if (num === 10 && json[i].category !== 'Precussion') {
+        } else if (num === 10 && json[i].category !== 'Percussion') {
 
         } else if (num === 11 && json[i].category !== 'Reverb') {
 
