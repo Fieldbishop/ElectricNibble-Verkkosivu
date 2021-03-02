@@ -8,7 +8,6 @@ const li = document.getElementsByTagName('li');
 
 for (let i = 0; i < li.length; i++) {
     li[i].addEventListener('click', function() {
-        console.log(i);
         updateProducts(jsonObj, i);
     });
 }
@@ -145,7 +144,7 @@ function updateProducts(json, num) {
             let a = document.createElement('a');
             a.className = 'productImg';
             a.id = String(i);
-            a.href = '#product' + i;
+            a.href = './product.html#' + i;
 
             let img = document.createElement('img');
             //img.src = json[num[i]].imageSide;
@@ -173,6 +172,10 @@ function updateProducts(json, num) {
             figure.appendChild(infoContainer);
             article.appendChild(figure);
 
+            article.addEventListener('click', function() {
+                console.log(i);
+            });
+
             main.appendChild(article);
             //document.getElementById(String(num[i])).style.backgroundImage = "url('" + json[num[i]].imageMain + "')";
 
@@ -193,5 +196,3 @@ function updateProducts(json, num) {
 }
 
 updateProducts(jsonObj, 0);
-
-console.log(jsonObj.length);

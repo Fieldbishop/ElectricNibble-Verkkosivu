@@ -56,7 +56,7 @@ function mainPage(json) {
         let a = document.createElement('a');
         a.className = 'productImg';
         a.id = String(num[i]);
-        a.href = '#product' + num[i];
+        a.href = './product.html#' + num[i];
 
         let img = document.createElement('img');
         //img.src = json[num[i]].imageSide;
@@ -84,6 +84,10 @@ function mainPage(json) {
         figure.appendChild(infoContainer);
         article.appendChild(figure);
 
+        article.addEventListener('click', function() {
+            console.log(num[i]);
+        });
+
         main.appendChild(article);
         //document.getElementById(String(num[i])).style.backgroundImage = "url('" + json[num[i]].imageMain + "')";
 
@@ -95,6 +99,8 @@ function mainPage(json) {
             document.getElementById(
                 String(num[i])).style.backgroundImage = "url('img/samBot.jpg')";
         }
+
+
     }
 
     /*

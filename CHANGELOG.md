@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.3.2021
+
+**Navigointi**
+- Lisätty alkeellinen navigointi, kun serverillä joutuu muuttamaan linkkaustapa
+- Jokainen tuote avaa sivun joka muuttuu dynaamisesti klikatun tuotteen indeksin perusteella
+
+
 ## 1.3.2021
 
 **Etusivu**
