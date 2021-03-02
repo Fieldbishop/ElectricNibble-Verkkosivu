@@ -56,7 +56,7 @@ function mainPage(json) {
         let a = document.createElement('a');
         a.className = 'productImg';
         a.id = String(num[i]);
-        a.href = './product.html#' + num[i];
+        a.href = './aProduct.html#' + num[i];
 
         let img = document.createElement('img');
         //img.src = json[num[i]].imageSide;

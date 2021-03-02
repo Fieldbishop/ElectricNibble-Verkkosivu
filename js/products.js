@@ -144,7 +144,7 @@ function updateProducts(json, num) {
             let a = document.createElement('a');
             a.className = 'productImg';
             a.id = String(i);
-            a.href = './product.html#' + i;
+            a.href = './aProduct.html#' + i;
 
             let img = document.createElement('img');
             //img.src = json[num[i]].imageSide;

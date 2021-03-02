@@ -6,6 +6,13 @@
 - Lisätty alkeellinen navigointi, kun serverillä joutuu muuttamaan linkkaustapa
 - Jokainen tuote avaa sivun joka muuttuu dynaamisesti klikatun tuotteen indeksin perusteella
 
+**JSON**
+- Jsonin kutsuja muutettu
+
+**Tuotesivu**
+- Muilla sivuilla tuotteita painamalla avataan tuotesivu
+- Tuotesivu näyttää tuotteen kuvan, nimen ja hinnan
+
 
 ## 1.3.2021
 
