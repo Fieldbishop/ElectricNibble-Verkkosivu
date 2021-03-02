@@ -7,13 +7,8 @@ body, html {
 header {
     display: flex;
     justify-content: center;
-    background-color: crimson;
+    background-color: #be0000;
     width: 100%;
-}
-
-.nonSticky {
-    position: absolute;
-    bottom: 0;
 }
 
 .sticky {
@@ -24,9 +19,11 @@ header {
 header a {
     color: #111111;
     text-align: center;
-    padding: 14px;
     text-decoration: none;
-
+    display: inline;
+    padding: 14px 100px;
+    font-family: BioRhyme, serif;
+    font-size: 28px;
 }
 
 header a:hover {
@@ -34,17 +31,173 @@ header a:hover {
     color: aliceblue;
 }
 
+#logo {
+    max-height: 80px;
+    margin: 0 auto;
+}
+
+header figure{
+    max-height: 80px;
+    margin: 5px;
+    padding-left: 35px;
+}
+
+#linkit{
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 23px;
+}
+
+.circle {
+    height: 35px;
+    width: 35px;
+    background-color: #eeeeee;
+    border-radius: 45%;
+}
+
+.circle:hover {
+    background-color: #111111;
+    cursor: pointer;
+}
+
+
+aside {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: -25vw;
+    top: 100px;
+    width: auto;
+    border: 2px solid #111111;
+    background: beige;
+    transition: all 0.25s 0.25s;
+}
+
+.open {
+    left: 1vw;
+}
+
+aside ul {
+    list-style: none;
+    padding: 4px;
+}
+
+aside ul li {
+    padding: 5px;
+}
+
+aside ul li:hover {
+    cursor:pointer;
+    background: aqua;
+}
+
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+main div {
+    height: 90px;
+    width: 100%;
+}
+
+.product {
+    width: 24vw;
+    margin: 3px;
+    height: 25vw;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+article figure {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.productImg {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    display: inline-block;
+}
+
+.productImg:hover > img {
+    opacity: 1;
+}
+
+a img {
+    opacity: 0;
+    object-fit: cover;
+    width: inherit;
+    transition: opacity .5s ease-out 100ms;
+}
+
+.animated {
+    margin: 0;
+    padding: 3px;
+    width: auto;
+    background: white;
+    position: relative;
+    bottom: 0;
+    transition: bottom .25s ease-out 100ms;
+}
+
+.product:hover .animated {
+    bottom: 160px;
+}
+
+.animated p {
+    margin: 0;
+    padding: 0;
+}
+
 
 footer {
     margin-top: 35px;
-    background: #eeeeee;
-    min-height: 250px;
+    background: #bebebe;
+    min-height: 200px;
     display: flex;
 }
 
 footer img {
     max-height: 100px;
     position: relative;
-    top: 25px;
-    left: 25px;
+    top: 30px;
+    left: 10px;
+}
+
+footer figure{
+    height: 100px;
+    width: 100px;
+
+}
+
+footer article{
+    margin: 0;
+    height: 50px;
+}
+
+footer article p{
+    font-family: Space Mono, serif;
+    font-size: 22px;
+    margin-top: 80px;
+    height: 100px;
+}
+
+#nimet{
+    position: relative;
+    left:50%;
+    bottom: 35px;
+}
+
+#nimet p{
+    font-size: 18px;
 }

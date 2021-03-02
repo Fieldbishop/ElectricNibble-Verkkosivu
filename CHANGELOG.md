@@ -1,4 +1,21 @@
 # Changelog
+
+## 1.3.2021
+
+**Etusivu**
+- Animaatiot tuotteisiin
+- Tyylittely lisätty etusivulle
+
+**Products Sivu**
+- Sivu luotu
+- Sivupalkki, jonka voi piilottaa
+- Sivupalkki näyttää halutun kategorian kaikki tuotteet
+- Animaatiot tuotteisiin ja sivupalkkiin
+
+**About Us sivu**
+- Sivu luotu
+- Pohja rakennettu, sisältö tarvitaan
+
 ## 23.2.2021
 
 **Etusivu muutos**
