@@ -1,0 +1,132 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: #be0000;
+    width: 100%;
+    font-size: 25px;
+}
+
+.nonSticky {
+    position: absolute;
+    bottom: 0;
+    justify-content: start;
+    text-align: center;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+}
+
+header a {
+    color: #111111;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    display: inline;
+    padding-right: 100px;
+    padding-left: 100px;
+    font-family: BioRhyme;
+    font-size: 28px;
+}
+
+header a:hover {
+    background-color: black;
+    color: aliceblue;
+
+}
+
+#logo {
+    max-height: 80px;
+    margin: 0 auto;
+}
+
+header figure{
+    max-height: 80px;
+    margin: 5px;
+    padding-left: 35px;
+}
+
+#linkit{
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 23px;
+}
+
+main {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+main article p{
+    max-width: 1000px;
+    margin-left: 200px;
+    font-size: 20px;
+    font-family: Space Mono;
+}
+
+#Mondo{
+    margin-top: 0px;
+    margin-left: 50px;
+}
+
+#sijainti{
+    display: flex;
+    margin-left: 60%;
+    margin-top: 100px;
+}
+
+a img {
+    visibility: hidden;
+    height: 100%;
+
+}
+
+footer {
+    margin-top: 35px;
+    background: #bebebe;
+    min-height: 200px;
+    display: flex;
+}
+
+footer img {
+    max-height: 100px;
+    position: relative;
+    top: 30px;
+    left: 10px;
+}
+
+footer figure{
+    height: 100px;
+    width: 100px;
+
+}
+
+footer article{
+    margin: 0;
+    height: 50px;
+}
+
+footer article p{
+    font-family: Space Mono;
+    font-size: 22px;
+    margin-top: 80px;
+    height: 100px;
+}
+
+#nimet{
+    position: relative;
+    left:65%;
+    bottom: 35px;
+}
+
+#nimet p{
+    font-size: 18px;
+}
