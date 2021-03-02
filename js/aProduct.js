@@ -1,16 +1,40 @@
 'use strict';
 
+tuoteSivu(4);
 
-const source = "modules.json"
-const tulokset = document.querySelector('main');
-fetch(source)
-.then(response => response.json())
-.then((jsonData) => {
-    for (let i = 0; i < jsonData.length; i++) {
-        console.log(jsonData[i].name);
-        console.log(jsonData[i].price);
+function tuoteSivu(i) {
+    const source = "modules.json"
+    const tulos = document.querySelector('main');
+    fetch(source)
+    .then(response => response.json())
+    .then((jsonData) => {
         let nimi = jsonData[i].name;
         let hinta = jsonData[i].price;
+        let brand = jsonData[i].brand;
+        let desc = jsonData[i].description;
+        let category = jsonData[i].category;
+        let url = jsonData[i].url;
+        let spec1 = jsonData[i].specs.aPos;
+        let spec2 = jsonData[i].specs.aNeg;
+        let spec3 = jsonData[i].specs.aPosSmall;
+        let spec4 = jsonData[i].specs.depth;
+        let spec5 = jsonData[i].specs.width;
+        let spec6 = jsonData[i].specs.height;
+
+        console.log(nimi);
+        console.log(hinta);
+        console.log(brand);
+        console.log(desc);
+        console.log(category);
+        console.log(url);
+        console.log(spec1);
+        console.log(spec2);
+        console.log(spec3);
+        console.log(spec4);
+        console.log(spec5);
+        console.log(spec6);
+
+
         /*let kuva1 = jsonData[i].imageMain;                    //oikeat kuvat
         let kuva2 = jsonData[i].imageSide;*/
         let kuva1 = "img/samBot.jpg"                            //placeholder kuvat
@@ -42,10 +66,9 @@ fetch(source)
         fig.appendChild(a);
         fig.appendChild(div);
         article.appendChild(fig);
-        tulokset.appendChild(article);
+        tulos.appendChild(article);
+    });
+}
 
-
-    }
-});
 
 
