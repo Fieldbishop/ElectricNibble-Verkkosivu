@@ -1,6 +1,12 @@
 'use strict';
 
-tuoteSivu(4);
+function productNum() {
+    let s = document.URL;
+    s = s.slice(-2);
+    s = s.replace('#', '');
+
+    return Number(s);
+}
 
 function tuoteSivu(i) {
     const source = "modules.json"
@@ -70,5 +76,5 @@ function tuoteSivu(i) {
     });
 }
 
-
+tuoteSivu(productNum());
 
