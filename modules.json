@@ -7,9 +7,9 @@
     "category": "Oscillator",
     "specs":
     {
-      "+12V": 120,
-      "-12V": 60,
-      "+5V": 0,
+      "aPos": 120,
+      "aNeg": 60,
+      "aPosSmall": 0,
       "depth": 32,
       "width": 38,
       "height": 3
@@ -26,9 +26,9 @@
     "category": "Percussion",
     "specs":
     {
-      "+12V": 70,
-      "-12V": 30,
-      "+5V": 0,
+      "aPos": 70,
+      "aNeg": 30,
+      "aPosSmall": 0,
       "depth": 32,
       "width": 18,
       "height": 3
@@ -45,9 +45,9 @@
     "category": "Oscillator",
     "specs":
     {
-      "+12V": 40,
-      "-12V": 15,
-      "+5V": 0,
+      "aPos": 40,
+      "aNeg": 15,
+      "aPosSmall": 0,
       "depth": 32,
       "width": 6,
       "height": 3
@@ -64,9 +64,9 @@
     "category": "Modulator",
     "specs":
     {
-      "+12V": 50,
-      "-12V": 0.5,
-      "+5V": 0,
+      "aPos": 50,
+      "aNeg": 0.5,
+      "aPosSmall": 0,
       "depth": 32,
       "width": 8,
       "height": 3
@@ -83,9 +83,9 @@
     "category": "Distortion",
     "specs":
     {
-      "+12V": 75,
-      "-12V": 75,
-      "+5V": 0,
+      "aPos": 75,
+      "aNeg": 75,
+      "aPosSmall": 0,
       "depth": 24,
       "width": 13,
       "height": 3
@@ -102,9 +102,9 @@
     "category": "Delay",
     "specs":
     {
-      "+12V": 60,
-      "-12V": 35,
-      "+5V": 0,
+      "aPos": 60,
+      "aNeg": 35,
+      "aPosSmall": 0,
       "depth": 50,
       "width": 16,
       "height": 3
@@ -121,9 +121,9 @@
     "category": "Reverb",
     "specs":
     {
-      "+12V": 60,
-      "-12V": 24,
-      "+5V": 0,
+      "aPos": 60,
+      "aNeg": 24,
+      "aPosSmall": 0,
       "depth": 50,
       "width": 10,
       "height": 3
@@ -140,9 +140,9 @@
     "category": "Utility",
     "specs":
     {
-      "+12V": 60,
-      "-12V": 50,
-      "+5V": 0,
+      "aPos": 60,
+      "aNeg": 50,
+      "aPosSmall": 0,
       "depth": 24,
       "width": 20,
       "height": 3
@@ -159,9 +159,9 @@
     "category": "Utility",
     "specs":
     {
-      "+12V": 50,
-      "-12V": 20,
-      "+5V": 0,
+      "aPos": 50,
+      "aNeg": 20,
+      "aPosSmall": 0,
       "depth": 42,
       "width": 4,
       "height": 3
@@ -178,9 +178,9 @@
     "category": "Compressor",
     "specs":
     {
-      "+12V": 120,
-      "-12V": 45,
-      "+5V": 0,
+      "aPos": 120,
+      "aNeg": 45,
+      "aPosSmall": 0,
       "depth": 24,
       "width": 12,
       "height": 3
@@ -197,9 +197,9 @@
     "category": "VCA",
     "specs":
     {
-      "+12V": 50,
-      "-12V": 50,
-      "+5V": 0,
+      "aPos": 50,
+      "aNeg": 50,
+      "aPosSmall": 0,
       "depth": 35,
       "width": 6,
       "height": 3
@@ -216,9 +216,9 @@
     "category": "Modulator",
     "specs":
     {
-      "+12V": 45,
-      "-12V": 15,
-      "+5V": 0,
+      "aPos": 45,
+      "aNeg": 15,
+      "aPosSmall": 0,
       "depth": 45,
       "width": 10,
       "height": 3
@@ -235,9 +235,9 @@
     "category": "Oscillator",
     "specs":
     {
-      "+12V": 80,
-      "-12V": 5,
-      "+5V": 90,
+      "aPos": 80,
+      "aNeg": 5,
+      "aPosSmall": 90,
       "depth": 38,
       "width": 10,
       "height": 3
@@ -254,9 +254,9 @@
     "category": "Percussion",
     "specs":
     {
-      "+12V": 150,
-      "-12V": 5,
-      "+5V": 90,
+      "aPos": 150,
+      "aNeg": 5,
+      "aPosSmall": 90,
       "depth": 38,
       "width": 10,
       "height": 3
@@ -273,9 +273,9 @@
     "category": "Percussion",
     "specs":
     {
-      "+12V": 150,
-      "-12V": 5,
-      "+5V": 90,
+      "aPos": 150,
+      "aNeg": 5,
+      "aPosSmall": 90,
       "depth": 38,
       "width": 10,
       "height": 3
@@ -292,9 +292,9 @@
     "category": "Effects processor",
     "specs":
     {
-      "+12V": 70,
-      "-12V": 70,
-      "+5V": 0,
+      "aPos": 70,
+      "aNeg": 70,
+      "aPosSmall": 0,
       "depth": 39,
       "width": 0,
       "height": 3
@@ -311,9 +311,9 @@
     "category": "LPG",
     "specs":
     {
-      "+12V": 45,
-      "-12V": 40,
-      "+5V": 0,
+      "aPos": 45,
+      "aNeg": 40,
+      "aPosSmall": 0,
       "depth": 24,
       "width": 4,
       "height": 3
@@ -330,9 +330,9 @@
     "category": "Mixer",
     "specs":
     {
-      "+12V": 110,
-      "-12V": 105,
-      "+5": 0,
+      "aPos": 110,
+      "aNeg": 105,
+      "aPosSmall": 0,
       "depth": 26,
       "width": 16,
       "height": 3
@@ -349,9 +349,9 @@
     "category": "Compressor",
     "specs":
     {
-      "+12V": 60,
-      "-12V": 50,
-      "+5V": 0,
+      "aPos": 60,
+      "aNeg": 50,
+      "aPosSmall": 0,
       "depth": 26,
       "width": 4,
       "height": 3
@@ -368,9 +368,9 @@
     "category": "Compressor",
     "specs":
     {
-      "+12V": 50,
-      "-12": 50,
-      "+5V": 0,
+      "aPos": 50,
+      "aNeg": 50,
+      "aPosSmall": 0,
       "depth": 38,
       "width": 4,
       "height": 3
@@ -387,9 +387,9 @@
     "category": "Filter",
     "specs":
     {
-      "+12V": 92,
-      "-12V": 82,
-      "+5V": 0,
+      "aPos": 92,
+      "aNeg": 82,
+      "aPosSmall": 0,
       "depth": 38,
       "width": 4,
       "height": 3
@@ -406,9 +406,9 @@
     "category": "Sequencer",
     "specs":
     {
-      "+12V": 150,
-      "-12V": 40,
-      "+5V": 0,
+      "aPos": 150,
+      "aNeg": 40,
+      "aPosSmall": 0,
       "depth": 35,
       "width": 32,
       "height": 3
@@ -425,9 +425,9 @@
     "category": "Modulator",
     "specs":
     {
-      "+12V": 85,
-      "-12V": 10,
-      "+5V": 0,
+      "aPos": 85,
+      "aNeg": 10,
+      "aPosSmall": 0,
       "depth": 35,
       "width": 8,
       "height": 3
@@ -444,9 +444,9 @@
     "category": "Reverb",
     "specs":
     {
-      "+12V": 72,
-      "-12V": 17,
-      "+5V": 0,
+      "aPos": 72,
+      "aNeg": 17,
+      "aPosSmall": 0,
       "depth": 45,
       "width": 14,
       "height": 1
@@ -463,9 +463,9 @@
     "category": "Effects processor",
     "specs":
     {
-      "+12V": 130,
-      "-12V": 12,
-      "+5V": 0,
+      "aPos": 130,
+      "aNeg": 12,
+      "aPosSmall": 0,
       "depth": 33,
       "width": 24,
       "height": 1
@@ -482,9 +482,9 @@
     "category": "Effects processor",
     "specs":
     {
-      "+12V": 90,
-      "-12V": 10,
-      "+5V": 0,
+      "aPos": 90,
+      "aNeg": 10,
+      "aPosSmall": 0,
       "depth": 22,
       "width": 12,
       "height": 3
