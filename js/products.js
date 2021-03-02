@@ -47,7 +47,7 @@ function updateProducts(json, num) {
             Mixer               7
             Modulator           8
             Oscillator          9
-            Precussion          10
+            Percussion          10
             Reverb              11
             Sequencer           12
             Utility             13
