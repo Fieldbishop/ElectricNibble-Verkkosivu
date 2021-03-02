@@ -25,7 +25,7 @@ fetch(source)
         a.id = i;
         a.className = "productImg";
         a.href = "$product0";                                   //linkki tuotteen sivuille kuvaa klikkaamalla
-        a.style = `background-image: url('${kuva2}')`;
+        a.style = `background-image: url('${kuva1}')`;
         let image = document.createElement('img');
         image.src = kuva2
         a.appendChild(image);
@@ -43,11 +43,9 @@ fetch(source)
         fig.appendChild(div);
         article.appendChild(fig);
         tulokset.appendChild(article);
-        
-        
+
+
     }
 });
-
-
 
 
