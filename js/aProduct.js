@@ -10,7 +10,7 @@ function productNum() {
 
 function tuoteSivu(i) {
     const source = "modules.json"
-    const tulos = document.querySelector('main');
+    const tulos = document.getElementById('tuoteInfoDiv');
     fetch(source)
     .then(response => response.json())
     .then((jsonData) => {
@@ -47,35 +47,80 @@ function tuoteSivu(i) {
         let kuva2 = "img/lmmao.jpg";
 
 
-        /*
+
         let article = document.createElement('article');
-        article.className = "product";
 
         let fig = document.createElement('figure');
-        let a = document.createElement('a');
-        a.id = i;
-        a.className = "productImg";
-        a.href = "$product0";                                   //linkki tuotteen sivuille kuvaa klikkaamalla
-        a.style = `background-image: url('${kuva1}')`;
-        let image = document.createElement('img');
-        image.src = kuva2
-        a.appendChild(image);
+        fig.className = "tuoteKuva";
 
-        let div = document.createElement('div');
-        div.className="animated";
-        let pNimi = document.createElement('p');
-        let pHinta = document.createElement('p');
-        pNimi.innerHTML=nimi;
-        pHinta.innerHTML=hinta + " euroa";
-        div.appendChild(pNimi);
-        div.appendChild(pHinta);
-
-        fig.appendChild(a);
-        fig.appendChild(div);
+        let image1 = document.createElement('img');                             //tähän säätöö kuvan kokoon
+        image1.src = kuva1;
+        fig.appendChild(image1);
         article.appendChild(fig);
+
+        let tekstiDiv = document.createElement('div');
+        tekstiDiv.id = "teksti";
+
+        let brandJaMalliOtsikko = document.createElement('h2');
+        brandJaMalliOtsikko.className = "brand";
+        brandJaMalliOtsikko.innerHTML = brand + ", " + nimi;
+        tekstiDiv.appendChild(brandJaMalliOtsikko);
+
+        let descPara = document.createElement('p');
+        descPara.className = "desc";
+        descPara.innerHTML = desc;
+        tekstiDiv.appendChild(descPara);
+
+        let hintaTeksti = document.createElement('p');
+        hintaTeksti.className = "hinta";
+        hintaTeksti.innerHTML = "Hinta: " + hinta + " euroa"
+        tekstiDiv.appendChild(hintaTeksti);
+
+        let ostoskoriNappi = document.createElement('button');
+        ostoskoriNappi.type = "button";
+        ostoskoriNappi.innerHTML = "Lisää ostoskoriin"
+        //ostoskoriNappi.addEventListener('click', jotain());                                           //tähän tarvitaan mahdollisesti joku funktio
+        tekstiDiv.appendChild(ostoskoriNappi);
+
+        let specsTeksti = document.createElement('p');
+        specsTeksti.className = "specs";
+        specsTeksti.innerHTML = "Tekniset tiedot:";
+        tekstiDiv.appendChild(specsTeksti);
+
+        let tekninenUL = document.createElement('ul');                              //specsilista
+        let kategoriaLI = document.createElement('li');
+        kategoriaLI.innerHTML = "kategoria: " + category;
+        tekninenUL.appendChild(kategoriaLI);
+        let korkeusLI = document.createElement('li');
+        korkeusLI.innerHTML = "korkeus: " + spec6 + " U";
+        tekninenUL.appendChild(korkeusLI);
+        let leveysLI = document.createElement('li');
+        leveysLI.innerHTML = "leveys: " +spec5+ " hp";
+        tekninenUL.appendChild(leveysLI);
+        let syvyysLI = document.createElement('li');
+        syvyysLI.innerHTML = "syvyys: " +spec4+ " mm";
+        tekninenUL.appendChild(syvyysLI);
+        let posLI = document.createElement('li');
+        posLI.innerHTML = "+12V: " +spec1+ " mA";
+        tekninenUL.appendChild(posLI);
+        let negLI = document.createElement('li');
+        negLI.innerHTML = "+12V: " +spec2+ " mA";
+        tekninenUL.appendChild(negLI);
+        let midLI = document.createElement('li');
+        midLI.innerHTML = "+12V: " +spec3+ " mA";
+        tekninenUL.appendChild(midLI);
+        tekstiDiv.appendChild(tekninenUL);
+
+        let linkki = document.createElement('a');
+        linkki.id = "linkki";
+        linkki.href = url;
+        linkki.innerHTML = "Tuotteen omat sivut";
+        tekstiDiv.appendChild(linkki);
+
+        article.appendChild(tekstiDiv);
         tulos.appendChild(article);
 
-         */
+
     });
 }
 

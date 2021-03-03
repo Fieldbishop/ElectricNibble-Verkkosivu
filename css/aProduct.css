@@ -13,6 +13,9 @@ figure{
 ul{
     list-style-type:circle;
 }
+main{
+    padding-top: 50px;
+}
 
 #tuoteInfoDiv article h2,#tuoteInfoDiv article p{
     max-width: 1000px;
