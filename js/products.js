@@ -1,14 +1,21 @@
 'use strict';
 
-let json = '[{"name": "First", "price": 25, "picture": {"yksi": "img/lmmao.jpg", "kaksi": "img/samBot.jpg"}, "category": "Compressor"}, {"name": "Second", "price": 26, "picture": {"yksi": "img/samBot.jpg", "kaksi": "img/lmmao.jpg"}, "category": "Compressor"}, {"name": "Third", "price": 27, "picture": {"yksi": "img/lmmao.jpg", "kaksi": "img/samBot.jpg"}, "category": "Delay"}, {"name": "Fourth", "price": 28, "picture": {"yksi": "img/samBot.jpg", "kaksi": "img/lmmao.jpg"}, "category": "Delay"}, {"name": "Fifth", "price": 29, "picture": {"yksi": "img/lmmao.jpg", "kaksi": "img/samBot.jpg"}, "category": "Delay"}, {"name": "Sixth", "price": 30, "picture": {"yksi": "img/samBot.jpg", "kaksi": "img/lmmao.jpg"}, "category": "LPG"}]';
-let jsonObj = JSON.parse(json);
+const url = "modules.json";
+
+/*
+fetch(url)
+.then(response => response.json())
+.then((jsonData) => {
+    const i = jsonData;
+    updateProducts(jsonData);
+});*/
 
 //Event listener sivupalkin kategorioille
 const li = document.getElementsByTagName('li');
 
 for (let i = 0; i < li.length; i++) {
     li[i].addEventListener('click', function() {
-        updateProducts(jsonObj, i);
+        updateProducts(jsonData, i);
     });
 }
 
@@ -33,7 +40,8 @@ const main = document.querySelector('main');
 function updateProducts(json, num) {
     main.innerHTML = '<div></div>';
 
-    /*Oikean JSON:in category arvo: json[i].category
+    /*
+    Oikean JSON:in category arvo: json[i].category
 
         Kategoriat
             All                 0
@@ -51,52 +59,6 @@ function updateProducts(json, num) {
             Sequencer           12
             Utility             13
             VCA                 14
-
-            Yksi tapa tehdä
-            switch(num) {
-            case 1:
-                checkCategory("Compressor");
-                break;
-            case 2:
-
-                break;
-            case 3:
-
-                break;
-            case 4:
-
-                break;
-            case 5:
-
-                break;
-            case 6:
-
-                break;
-            case 7:
-
-                break;
-            case 8:
-
-                break;
-            case 9:
-
-                break;
-            case 10:
-
-                break;
-            case 11:
-
-                break;
-            case 12:
-
-                break;
-            case 13:
-
-                break;
-            case 14:
-
-                break;
-            default:
 
         }
     */

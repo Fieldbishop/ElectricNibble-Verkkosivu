@@ -2,25 +2,20 @@
 
 const main = document.querySelector('main');    //Näyteikkuna johon laitetaan näkyville 6 tuotetta
 
-
-//Json rakennetaan manuaalisesti offline versiossa
-let json = '[{"name": "First", "price": 25, "picture": {"yksi": "img/lmmao.jpg", "kaksi": "img/samBot.jpg"}}, {"name": "Second", "price": 26, "picture": {"yksi": "img/samBot.jpg", "kaksi": "img/lmmao.jpg"}}, {"name": "Third", "price": 27, "picture": {"yksi": "img/lmmao.jpg", "kaksi": "img/samBot.jpg"}}, {"name": "Fourth", "price": 28, "picture": {"yksi": "img/samBot.jpg", "kaksi": "img/lmmao.jpg"}}, {"name": "Fifth", "price": 29, "picture": {"yksi": "img/lmmao.jpg", "kaksi": "img/samBot.jpg"}}, {"name": "Sixth", "price": 30, "picture": {"yksi": "img/samBot.jpg", "kaksi": "img/lmmao.jpg"}}]'
-
-//JSON.parse muuntaa json stringistä Arrayn. Kun serverillä, turha.
-let jsonObj = JSON.parse(json);
+const url = "modules.json";
 
 
-/*
-//Kun serverillä, käytetään tätä Jsonin saamiseksi. Laita jsonin osoite fetch:iin
-fetch("JSON OSOITE")
-.then(function(vastaus) {
-    return vastaus.json();
-}).then(function(json) {
-    mainPage(json);
-}).catch(function(error) {
-    alert(error);
-    console.log(error);
-});*/
+
+fetch(url)
+.then(response => response.json())
+.then((jsonData) => {
+    mainPage(jsonData);
+});
+
+const modules = new Modules();
+
+console.log(modules.getJson());
+
 
 //Funktio joka rakentaa näyteikkunan jsonin datasta.
 
@@ -35,8 +30,8 @@ function mainPage(json) {
     let rand;   //Satunnainen numero tallennetaan tähän
     let num = [];   //Tyhjä Array johon täytetään numerot
 
-    while(num.length < json.length) {
-        rand = Math.floor(Math.random() * 6) //Random 0 - 5
+    while(num.length < 6) { //Haetaan kuusi tuotetta
+        rand = Math.floor(Math.random() * json.length) //Random 0 - jsonin pituus
         if(!num.includes(rand)) {               //Jos rand ei ole Arrayssa
             num.push(rand);                     //Lisää Arrayhin
         }
@@ -119,5 +114,3 @@ function mainPage(json) {
      */
 
 }
-
-mainPage(jsonObj); //Kutsutaan funktiota joka luo näyteikkunan
