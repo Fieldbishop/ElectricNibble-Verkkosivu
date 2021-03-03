@@ -4,17 +4,11 @@ const main = document.querySelector('main');    //Näyteikkuna johon laitetaan n
 
 const url = "modules.json";
 
-
-
 fetch(url)
 .then(response => response.json())
 .then((jsonData) => {
     mainPage(jsonData);
 });
-
-const modules = new Modules();
-
-console.log(modules.getJson());
 
 
 //Funktio joka rakentaa näyteikkunan jsonin datasta.

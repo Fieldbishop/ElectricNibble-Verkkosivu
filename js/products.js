@@ -2,20 +2,23 @@
 
 const url = "modules.json";
 
-/*
+
 fetch(url)
 .then(response => response.json())
 .then((jsonData) => {
-    const i = jsonData;
-    updateProducts(jsonData);
-});*/
+    updateProducts(jsonData, 0);
+});
 
 //Event listener sivupalkin kategorioille
 const li = document.getElementsByTagName('li');
 
 for (let i = 0; i < li.length; i++) {
     li[i].addEventListener('click', function() {
-        updateProducts(jsonData, i);
+        fetch(url)
+        .then(response => response.json())
+        .then((jsonData) => {
+            updateProducts(jsonData, i);
+        });
     });
 }
 
@@ -69,7 +72,7 @@ function updateProducts(json, num) {
 
         } else if (num === 2 && json[i].category !== 'Delay') {
 
-        } else if (num === 3 && json[i].category !== 'Distorion') {
+        } else if (num === 3 && json[i].category !== 'Distortion') {
 
         } else if (num === 4 && json[i].category !== 'Effects processor') {
 
@@ -156,5 +159,3 @@ function updateProducts(json, num) {
     }
 
 }
-
-updateProducts(jsonObj, 0);
