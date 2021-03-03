@@ -65,22 +65,55 @@ main {
     justify-content: start;
 }
 
-main article p{
+main figure p{
     max-width: 1000px;
-    margin-left: 200px;
     font-size: 20px;
     font-family: Space Mono;
+    margin-top: 0;
+    margin-left: 25px;
+}
+
+#room {
+    height: 80px;
+    width: 100%;
+}
+
+.content img {
+    max-height: 35vw;
+}
+
+main figure {
+    display: flex;
 }
 
 #Mondo{
-    margin-top: 0px;
+    margin-top: 0;
     margin-left: 50px;
 }
 
-#sijainti{
-    display: flex;
-    margin-left: 60%;
-    margin-top: 100px;
+.mapContainer {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.mapContainer h1 {
+    font-size: 25px;
+    font-family: Space Mono;
+}
+
+.mapContainer article {
+    margin-left: 50px;
+}
+
+.mapContainer p {
+    margin-left: 0;
+}
+
+#map {
+    height: 400px;
+    width: 600px;
+    margin-right: 50px;
+    margin-top: 20px;
 }
 
 a img {
