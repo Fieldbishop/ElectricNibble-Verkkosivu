@@ -1,14 +1,19 @@
 # Changelog
 
 ## 3.3.2021
+
 **About us sivu**
 - Aseteltu elementit uudelleen
 - Uusi kuva
 - Yhteystiedot elementti
 - Google Maps API toteutettu
+- Painike joka avaa Google maps reittiohjeet nykyisestä sijainnista
 
 **Javascript**
 - Muutettu Json fetch kutsua
+
+**Ostoskori**
+- Perusteet ostoskori luokalle
 
 
 ## 2.3.2021
@@ -40,6 +45,7 @@
 **About Us sivu**
 - Sivu luotu
 - Pohja rakennettu, sisältö tarvitaan
+
 
 ## 23.2.2021
 
