@@ -7,7 +7,45 @@
         <link href='https://fonts.googleapis.com/css?family=BioRhyme|Space Mono' rel='stylesheet'>
     </head>
     <body>
-        <header>
+
+        <main>
+
+            <div id="room">TILAA HEADERIN JÄLKEEN</div>
+
+            <figure class="content">
+                <img id="Mondo" src="./img/mondo.jpg" alt="Picture of Mondo">
+                <article>
+                    <p>Tähän jotakin tietoa Mondosta tai yrityksestä. Jeejee kiva kauppa, myydään paljon tavaraa.
+                        <br/>
+                        Mondo oli siisti tyyppi. Diggas tosi paljon moduuleist.
+                        <br/>
+                        Sen lapsetki tykkäs sen moduuleista ja oli iloisia.
+                        <br/>
+                        Mondon Moduulit on kuumaa kamaa.
+                    </p>
+                </article>
+            </figure>
+
+
+            <figure class="mapContainer">
+                <article>
+                    <h1>Yhteystiedot</h1>
+                    <p>S-posti:
+                        <br/>
+                        Osoite:
+                        <br/>
+                        Yms.
+                    </p>
+
+                </article>
+
+                <map id="map"></map>
+
+            </figure>
+        </main>
+
+
+        <header class="sticky">
             <figure><img id="logo" src="./img/logo.png" alt="Logo"></figure>
             <figure id="linkit">
                 <a href="./index.html">Home</a>
@@ -15,26 +53,6 @@
                 <a href="#about">About us</a>
             </figure>
         </header>
-
-        <main>
-            <img id="Mondo" src="./img/lmmao.jpg" alt="Mondon kuva tms">
-            <article>
-                <p>Tähän jotakin tietoa Mondosta tai yrityksestä. Jeejee kiva kauppa, myydään paljon tavaraa.
-                    <br/>
-                    Mondo oli siisti tyyppi. Diggas tosi paljon moduuleist.
-                    <br/>
-                    Sen lapsetki tykkäs sen moduuleista ja oli iloisia.
-                    <br/>
-                    Mondon Moduulit on kuumaa kamaa.
-                </p>
-            </article>
-            <figure id="sijainti">
-                <img id="Kartta" src="./img/logo.png" alt="Sijainti">
-                <p>Tähän kaupan sijainti jeejee</p>
-            </figure>
-
-        </main>
-
 
 
         <footer>
@@ -46,5 +64,9 @@
                 <p>Sampo Bredenberg <br/> Jaakko Nahkala <br/> Lassi Piispanen <br/> Niklas Kukkonen</p>
             </article>
         </footer>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCEGzcWBzSjC2Bzql7TR9OM03AzhrkWB8&callback=initMap&libraries=&v=weekly"
+            async></script>
+    <script src="js/map.js"></script>
     </body>
 </html>

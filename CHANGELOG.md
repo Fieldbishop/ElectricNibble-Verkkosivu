@@ -1,5 +1,12 @@
 # Changelog
 
+## 3.3.2021
+**About us sivu**
+- Aseteltu elementit uudelleen
+- Uusi kuva
+- Yhteystiedot elementti
+- Google Maps API toteutettu
+
 ## 2.3.2021
 
 **Navigointi**
@@ -33,7 +40,7 @@
 ## 23.2.2021
 
 **Etusivu muutos**
-- Tuotteet <a> linkeiksi joiden background-image tuotekuva
+- Tuotteet \<a> linkeiksi joiden background-image tuotekuva
 - Isommat kuvakkeet, moderni look
 - On Hover kuvake vaihtuu. Background-image ja img elementti päällekkäin
 - Tuotteet Json Arraysta
