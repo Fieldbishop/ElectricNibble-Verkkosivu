@@ -71,16 +71,6 @@ function tuoteSivu(i) {
         descPara.innerHTML = desc;
         tekstiDiv.appendChild(descPara);
 
-        let hintaTeksti = document.createElement('p');
-        hintaTeksti.className = "hinta";
-        hintaTeksti.innerHTML = "Hinta: " + hinta + " euroa"
-        tekstiDiv.appendChild(hintaTeksti);
-
-        let ostoskoriNappi = document.createElement('button');
-        ostoskoriNappi.type = "button";
-        ostoskoriNappi.innerHTML = "Lisää ostoskoriin"
-        //ostoskoriNappi.addEventListener('click', jotain());                                           //tähän tarvitaan mahdollisesti joku funktio
-        tekstiDiv.appendChild(ostoskoriNappi);
 
         let specsTeksti = document.createElement('p');
         specsTeksti.className = "specs";
@@ -111,11 +101,23 @@ function tuoteSivu(i) {
         tekninenUL.appendChild(midLI);
         tekstiDiv.appendChild(tekninenUL);
 
+        let hintaTeksti = document.createElement('p');
+        hintaTeksti.className = "hinta";
+        hintaTeksti.innerHTML = "Hinta: " + hinta + " euroa"
+        tekstiDiv.appendChild(hintaTeksti);
+
+        let ostoskoriNappi = document.createElement('button');
+        ostoskoriNappi.type = "button";
+        ostoskoriNappi.innerHTML = "Lisää ostoskoriin"
+        //ostoskoriNappi.addEventListener('click', jotain());                                           //tähän tarvitaan mahdollisesti joku funktio
+        tekstiDiv.appendChild(ostoskoriNappi);
+
         let linkki = document.createElement('a');
         linkki.id = "linkki";
         linkki.href = url;
         linkki.innerHTML = "Tuotteen omat sivut";
         tekstiDiv.appendChild(linkki);
+
 
         article.appendChild(tekstiDiv);
         tulos.appendChild(article);
