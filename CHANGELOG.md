@@ -7,6 +7,10 @@
 - Yhteystiedot elementti
 - Google Maps API toteutettu
 
+**Javascript**
+- Muutettu Json fetch kutsua
+
+
 ## 2.3.2021
 
 **Navigointi**
