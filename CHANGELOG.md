@@ -12,6 +12,9 @@
 **Javascript**
 - Muutettu Json fetch kutsua
 
+**Ostoskori**
+- Perusteet ostoskori luokalle
+
 
 ## 2.3.2021
 
