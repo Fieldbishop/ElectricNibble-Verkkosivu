@@ -21,7 +21,7 @@ header a {
     text-align: center;
     text-decoration: none;
     display: inline;
-    padding: 14px 100px;
+    padding: 20px;
     font-family: BioRhyme, serif;
     font-size: 28px;
 }
@@ -43,7 +43,6 @@ header figure{
 }
 
 #linkit{
-    justify-content: center;
     margin: 0 auto;
     padding-top: 23px;
 }
@@ -197,10 +196,62 @@ footer article p{
 
 #nimet{
     position: relative;
-    left:50%;
-    bottom: 35px;
+    margin-right: 0;
+    margin-left: auto;
+    right: 50px;
+    bottom: 20px;
 }
 
 #nimet p{
     font-size: 18px;
+}
+
+
+@media only screen and (max-width: 768px){
+
+    main{
+        width: 100%;
+    }
+
+    header a {
+        font-size: 18px;
+        padding: 20px;
+    }
+
+    header figure{
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 5px;
+    }
+
+    header{
+        width: 100%;
+    }
+
+    footer{
+        width: 100%;
+    }
+
+    footer figure {
+        margin: 0;
+    }
+
+    footer img{
+        max-height: 80px;
+        top:50px;
+    }
+
+    footer article p{
+        font-family: Space Mono, serif;
+        font-size: 18px;
+        margin-left: 0;
+        margin-top: 80px;
+        height: 100px;
+    }
+
+    #nimet p{
+        font-size: 15px;
+        margin-left: auto;
+        margin-right: 0;
+    }
 }

@@ -41,7 +41,6 @@ header {
 header a {
     color: #111111;
     text-align: center;
-    padding: 14px;
     text-decoration: none;
     display: inline;
     padding-right: 100px;
@@ -66,7 +65,6 @@ header figure{
 }
 
 #linkit{
-    justify-content: center;
     margin: 0 auto;
     padding-top: 40px;
 }
@@ -188,11 +186,68 @@ footer article p{
 
 #nimet{
     position: relative;
-    left: 50%;
-    bottom: 30px;
+    margin-right: 0;
+    margin-left: auto;
+    right: 50px;
+    bottom: 20px;
 }
 
 
 #nimet p{
     font-size: 18px;
+}
+
+
+
+@media only screen and (max-width: 768px){
+    main{
+        width: 100%;
+    }
+
+    #ye h3, #ye p {
+        margin: 3px;
+        font-size: 2.5vw;
+        font-family: Space Mono, serif;
+    }
+
+    header a {
+        font-size: 18px;
+        padding: 20px;
+    }
+
+    header figure{
+        margin-left: 10px;
+        margin-right: 0;
+    }
+
+    header{
+        width: 100%;
+    }
+
+    footer{
+        width: 100%;
+    }
+
+    footer figure {
+        margin: 0;
+    }
+
+    footer img{
+        max-height: 80px;
+        top:50px;
+    }
+
+    footer article p{
+        font-family: Space Mono, serif;
+        font-size: 18px;
+        margin-left: 0;
+        margin-top: 80px;
+        height: 100px;
+    }
+
+    #nimet p{
+        font-size: 15px;
+        margin-left: auto;
+        margin-right: 0;
+    }
 }
