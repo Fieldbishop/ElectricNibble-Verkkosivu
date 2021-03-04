@@ -68,7 +68,7 @@ aside {
     display: flex;
     flex-direction: column;
     position: fixed;
-    left: -25vw;
+    left: -100%;
     top: 100px;
     width: auto;
     border: 2px solid #111111;
@@ -77,7 +77,7 @@ aside {
 }
 
 .open {
-    left: 1vw;
+    left: 0;
 }
 
 aside ul {
@@ -203,4 +203,18 @@ footer article p{
 
 #nimet p{
     font-size: 18px;
+}
+
+#cartIcon {
+    border: #111111 solid;
+    position: fixed;
+    right: 5px;
+    top: 5px;
+
+    height: 40px;
+    width: 40px;
+    background-color: #be0000;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
 }

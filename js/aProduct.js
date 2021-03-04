@@ -1,5 +1,9 @@
 'use strict';
 
+const source = "modules.json";
+
+const shop = new ShoppingCart();
+
 function productNum() {
     let s = document.URL;
     s = s.slice(-2);
@@ -8,8 +12,18 @@ function productNum() {
     return Number(s);
 }
 
+function addToCart() {
+    fetch(source)
+    .then(response => response.json())
+    .then(jsonData => {
+        shop.addToCart(jsonData[productNum()]);
+        shop.getItem();
+        updateNum();
+    });
+    return "";
+}
+
 function tuoteSivu(i) {
-    const source = "modules.json"
     const tulos = document.getElementById('tuoteInfoDiv');
     fetch(source)
     .then(response => response.json())
@@ -27,6 +41,7 @@ function tuoteSivu(i) {
         let spec5 = jsonData[i].specs.width;
         let spec6 = jsonData[i].specs.height;
 
+        /*
         console.log(nimi);
         console.log(hinta);
         console.log(brand);
@@ -39,6 +54,7 @@ function tuoteSivu(i) {
         console.log(spec4);
         console.log(spec5);
         console.log(spec6);
+        */
 
 
         /*let kuva1 = jsonData[i].imageMain;                    //oikeat kuvat
@@ -109,7 +125,7 @@ function tuoteSivu(i) {
         let ostoskoriNappi = document.createElement('button');
         ostoskoriNappi.type = "button";
         ostoskoriNappi.innerHTML = "Lisää ostoskoriin"
-        //ostoskoriNappi.addEventListener('click', jotain());                                           //tähän tarvitaan mahdollisesti joku funktio
+        ostoskoriNappi.addEventListener('click', addToCart);
         tekstiDiv.appendChild(ostoskoriNappi);
 
         let linkki = document.createElement('a');
@@ -128,3 +144,12 @@ function tuoteSivu(i) {
 
 tuoteSivu(productNum());
 
+function updateNum(){
+    let cartNum = document.createElement('p');
+    cartNum.appendChild(document.createTextNode(String(shop.getItem().length)));
+    let buyButton = document.querySelector('#cartIcon');
+    buyButton.innerHTML = '';
+    buyButton.appendChild(cartNum);
+}
+
+updateNum();
