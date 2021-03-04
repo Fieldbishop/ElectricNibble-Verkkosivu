@@ -196,3 +196,17 @@ footer article p{
 #nimet p{
     font-size: 18px;
 }
+
+#cartIcon {
+    border: #111111 solid;
+    position: fixed;
+    right: 5px;
+    top: 5px;
+
+    height: 40px;
+    width: 40px;
+    background-color: #be0000;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+}
