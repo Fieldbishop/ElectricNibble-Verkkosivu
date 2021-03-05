@@ -70,8 +70,13 @@ main {
 .content{
     width: 100%;
     display: flex;
+    flex-flow: row;
+    justify-content: space-around;
 }
+.content figure{
 
+
+}
 #Mondo{
     margin-top: 0;
     margin-left: 0;
