@@ -4,21 +4,29 @@ class ShoppingCart {
 
     constructor() {
         this.total = 0;
+
         this.items = [];
+
+        if(checkCookie() !== "") {
+            this.items = JSON.parse(checkCookie());
+        }
+
     }
 
     addToCart(i) {
-        this.items.push(i;
+        this.items.push(i);
+        console.log(this.getTotal());
+        this.saveCart();
     }
 
-    removeFromCart(i) {
-        let newItems = [];
-        for (let i = 0; i < this.items.length; i++) {
-            if(this.items[i] !== i) {
-                newItems.push(this.items[i]);
-            }
-        }
-        this.items = newItems;
+    removeFromCart(item) {
+        this.items.splice(item, 1);
+        this.saveCart();
+    }
+
+    removeAll() {
+        this.items = [];
+        this.saveCart();
     }
 
     getTotal() {
@@ -30,8 +38,29 @@ class ShoppingCart {
         return this.total;
     }
 
-    getItem(i) {
-        return this.items(i);
+    getItem() {
+        return this.items;
+    }
+
+    saveCart() {
+        console.log("Saved");
+        document.cookie = "cart=" + JSON.stringify(this.items) + ";SameSite=lax";
+    }
+
+    getName(i) {
+        try {
+            return this.items[i].name;
+        } catch {
+            return 0;
+        }
+    }
+
+    getPrice(i) {
+        return this.items[i].price;
+    }
+
+    getBrand(i) {
+        return this.items[i].brand;
     }
 
 }

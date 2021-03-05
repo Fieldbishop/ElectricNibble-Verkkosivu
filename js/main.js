@@ -4,6 +4,10 @@ const main = document.querySelector('main');    //Näyteikkuna johon laitetaan n
 
 const url = "modules.json";
 
+const shop = new ShoppingCart();
+
+shop.getItem();
+
 fetch(url)
 .then(response => response.json())
 .then((jsonData) => {
@@ -108,3 +112,8 @@ function mainPage(json) {
      */
 
 }
+
+let cartNum = document.createElement('p');
+cartNum.appendChild(document.createTextNode(String(shop.getItem().length)));
+let buyButton = document.querySelector('#cartIcon');
+buyButton.appendChild(cartNum);
