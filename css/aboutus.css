@@ -3,15 +3,6 @@ body, html {
     margin: 0;
 }
 
-
-header {
-    display: flex;
-    justify-content: center;
-    background-color: #be0000;
-    width: 100%;
-    font-size: 25px;
-}
-
 .nonSticky {
     position: absolute;
     bottom: 0;
@@ -21,39 +12,6 @@ header {
 .sticky {
     position: fixed;
     top: 0;
-}
-
-header a {
-    color: #111111;
-    text-align: center;
-    text-decoration: none;
-    display: inline;
-    padding-right: 100px;
-    padding-left: 100px;
-    font-family: BioRhyme, serif;
-    font-size: 28px;
-}
-
-header a:hover {
-    background-color: black;
-    color: aliceblue;
-
-}
-
-#logo {
-    max-height: 80px;
-    margin: 0 auto;
-}
-
-header figure{
-    max-height: 80px;
-    margin: 5px;
-    padding-left: 35px;
-}
-
-#linkit{
-    margin: 0 auto;
-    padding-top: 23px;
 }
 
 #room {
@@ -67,30 +25,31 @@ main {
     flex-wrap: wrap;
     justify-content: space-around;
 }
-.content{
+
+.content {
     width: 100%;
     display: flex;
 }
 
-#Mondo{
+#Mondo {
     margin-top: 0;
     margin-left: 0;
     max-height: 35vw;
 }
 
-#esittelyVideo{
+#esittelyVideo {
     max-height: 35vw;
     width: 50%;
 }
 
-.content p{
+.content p {
     width: 1000px;
     font-size: 20px;
     font-family: Space Mono, serif;
     margin-top: 0;
 }
 
-main figure h1{
+main figure h1 {
     margin-top: 50px;
     font-family: Space Mono, serif;
 }
@@ -120,17 +79,17 @@ main figure h1{
     margin-top: 0;
 }
 
-#jasenKuvat{
+#jasenKuvat {
     width: 320px;
 }
 
-.jasenKuva{
+.jasenKuva {
     width: 150px;
     margin: 0;
     padding: 0;
 }
 
-div{
+div {
     max-width: 700px;
 }
 
@@ -155,68 +114,9 @@ a img {
 
 }
 
-footer {
-    margin-top: 35px;
-    background: #bebebe;
-    min-height: 200px;
-    display: flex;
-}
 
-footer img {
-    max-height: 100px;
-    position: relative;
-    top: 30px;
-    left: 10px;
-}
-
-footer figure{
-    height: 100px;
-    width: 100px;
-
-}
-
-footer article{
-    margin: 0;
-    height: 50px;
-}
-
-footer article p{
-    font-family: Space Mono, serif;
-    font-size: 22px;
-    margin-top: 80px;
-    height: 100px;
-}
-
-#nimet{
-    position: relative;
-    margin-right: 0;
-    margin-left: auto;
-    right: 50px;
-    bottom: 20px;
-}
-
-#nimet p{
-    font-size: 18px;
-}
-
-
-@media only screen and (max-width: 768px){
-    main{
-        width: 100%;
-    }
-
-    header a {
-        font-size: 18px;
-        padding: 20px;
-    }
-
-    header figure{
-        margin-left: 0;
-        margin-right: 0;
-        padding-left: 5px;
-    }
-
-    header{
+@media only screen and (max-width: 768px) {
+    main {
         width: 100%;
     }
 
@@ -226,59 +126,31 @@ footer article p{
 
     }
 
-    #Mondo{
+    #Mondo {
         margin: 0;
         max-height: 70%;
         max-width: 70%;
     }
 
-    .content article p{
+    .content article p {
         margin-left: 0;
         margin-top: 20px;
         max-width: 500px;
     }
 
-
-    footer{
-        width: 100%;
-    }
-
-    footer figure {
-        margin: 0;
-    }
-
-    footer img{
-        max-height: 80px;
-        top:50px;
-    }
-
-    footer article p{
-        font-family: Space Mono, serif;
-        font-size: 18px;
-        margin-left: 0;
-        margin-top: 80px;
-        height: 100px;
-    }
-
-    #nimet p{
-        font-size: 15px;
-        margin-left: auto;
-        margin-right: 0;
-    }
-
-    .mapContainer{
+    .mapContainer {
         flex-flow: column;
     }
 
-    #map{
+    #map {
         max-width: 400px;
     }
 
-    #location{
-        margin-left:150px;
+    #location {
+        margin-left: 150px;
     }
 
-    .mapContainer article{
+    .mapContainer article {
         margin: 0;
     }
 }
