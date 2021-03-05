@@ -128,9 +128,19 @@ a img {
 }
 
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 1170px){
     main{
         width: 100%;
+    }
+
+    #ye {
+        display: flex;
+        flex-direction: column;
+        position: inherit;
+        align-items: center;
+        background: #c6c6c6;
+        margin-left: 8px;
+        max-width: 100%;
     }
 
     #ye h3, #ye p {

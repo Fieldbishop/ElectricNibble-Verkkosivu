@@ -21,9 +21,11 @@
 figure{
 
 }
+
 ul{
     list-style-type:circle;
 }
+
 main{
     padding-top: 50px;
 }
@@ -63,3 +65,10 @@ main{
     cursor: pointer;
 }
 
+@media only screen and (max-width: 1170px){
+    main{
+        width: 100%;
+    }
+
+
+}
