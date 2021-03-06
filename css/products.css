@@ -58,26 +58,30 @@ aside ul li:hover {
 
 main {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: space-around;
 }
 
 main div {
-    height: 90px;
+    height: 100px;
     width: 100%;
 }
 
 .product {
-    width: 24vw;
-    margin: 3px;
-    height: 25vw;
+    width: 30vw;
+    height: 31vw;
     box-sizing: border-box;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    /*overflow: hidden;*/
+}
 
+.product a{
+    overflow: hidden;
 }
 
 article figure {
@@ -86,15 +90,24 @@ article figure {
     margin: 0;
 }
 
+
 .productImg {
     height: 100%;
     width: 100%;
+    margin-top: 20px;
+
     background-size: cover;
     display: inline-block;
 }
 
 .productImg:hover > img {
     opacity: 1;
+}
+
+main article p{
+    margin-top: 60px;
+    font-family: "Space Mono", serif;
+    font-size: 16px;
 }
 
 a img {
@@ -105,6 +118,7 @@ a img {
 }
 
 .animated {
+    height: 10%;
     margin: 0;
     padding: 3px;
     width: auto;
@@ -112,10 +126,12 @@ a img {
     position: relative;
     bottom: 0;
     transition: bottom .25s ease-out 100ms;
+    opacity: 0;
 }
 
 .product:hover .animated {
-    bottom: 160px;
+    bottom: 15%;
+    opacity: 1;
 }
 
 .animated p {
@@ -138,9 +154,32 @@ a img {
 }
 
 @media only screen and (max-width: 768px){
-
     main{
         width: 100%;
     }
 
+    #ye {
+        display: flex;
+        flex-direction: column;
+        position: inherit;
+        align-items: center;
+        background: #c6c6c6;
+        margin-left: 8px;
+        max-width: 100%;
+    }
+
+    #ye h3, #ye p {
+        margin: 3px;
+        font-size: 2.5vw;
+        font-family: "Space Mono", serif;
+    }
+
+    .animated {
+        height: 80%;
+    }
+
+    .product:hover .animated {
+        bottom: 80%;
+        opacity: 1;
+    }
 }

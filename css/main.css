@@ -45,8 +45,9 @@ body, html {
 
 main {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: space-around;
 }
 
 .product {
@@ -58,6 +59,10 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /*overflow: hidden;*/
+}
+
+.product a{
     overflow: hidden;
 }
 
@@ -82,8 +87,8 @@ article figure {
 
 main article p{
     margin-top: 60px;
-    font-family: Space Mono, serif;
-    font-size: 20px;
+    font-family: "Space Mono", serif;
+    font-size: 16px;
 }
 
 a img {
@@ -94,6 +99,7 @@ a img {
 }
 
 .animated {
+    height: 10%;
     margin: 0;
     padding: 3px;
     width: auto;
@@ -101,10 +107,12 @@ a img {
     position: relative;
     bottom: 0;
     transition: bottom .25s ease-out 100ms;
+    opacity: 0;
 }
 
 .product:hover .animated {
-    bottom: 200px;
+    bottom: 15%;
+    opacity: 1;
 }
 
 .animated p {
@@ -146,6 +154,15 @@ a img {
     #ye h3, #ye p {
         margin: 3px;
         font-size: 2.5vw;
-        font-family: Space Mono, serif;
+        font-family: "Space Mono", serif;
+    }
+
+    .animated {
+        height: 60%;
+    }
+
+    .product:hover .animated {
+        bottom: 80%;
+        opacity: 1;
     }
 }
