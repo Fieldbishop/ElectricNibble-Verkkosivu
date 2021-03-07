@@ -18,6 +18,18 @@ function initMap() {
     new google.maps.Marker({        //Luodaan uusi karttamerkki
         position: shop,             //Asetetaan se haluttuun kohtaan
         map: map,                   //Halutulle kartalle
+        title: "Mondo's Modules",   //Otsikko
+    });
+
+    fetch("http://api.open-notify.org/iss-now.json")
+        .then(r => r.json())
+        .then(jsondata => {
+            let isspos = { lat: Number(jsondata.iss_position.latitude), lng: Number(jsondata.iss_position.longitude)};
+            new google.maps.Marker({
+                position: isspos,
+                map: map,
+                title: "ISS",
+            });
     });
 }
 

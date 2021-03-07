@@ -18,6 +18,9 @@
 **Javascript**
 - Siistitty ja kommentoitu koodia
 
+**Kartta**
+- Kartta näyttää nyt myös ISS:n tämän hetkisen paikan kartalla
+
 
 ## 4.3.2021
 **Ostoskori**
