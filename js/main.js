@@ -74,6 +74,11 @@ function mainPage(json) {
 
         infoContainer.appendChild(name);
         infoContainer.appendChild(price);
+
+        infoContainer.addEventListener("click", function(){
+            window.open('./aProduct.html#' + num[i], '_self');
+        });
+
         figure.appendChild(infoContainer);
         article.appendChild(figure);
 
@@ -113,7 +118,4 @@ function mainPage(json) {
 
 }
 
-let cartNum = document.createElement('p');
-cartNum.appendChild(document.createTextNode(String(shop.getItem().length)));
-let buyButton = document.querySelector('#cartIcon');
-buyButton.appendChild(cartNum);
+iconCart();

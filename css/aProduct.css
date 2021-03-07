@@ -1,3 +1,8 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
 #tuoteInfoDiv article{
     display: flex;
     justify-content: center;
@@ -15,10 +20,6 @@
 }
 
 #teksti button, .hinta{
-
-}
-
-figure{
 
 }
 
@@ -49,20 +50,6 @@ main{
     margin-left: 200px;
     font-size: 18px;
     font-family: "Space Mono", serif;
-}
-
-#cartIcon {
-    border: #111111 solid;
-    position: fixed;
-    right: 5px;
-    top: 5px;
-
-    height: 40px;
-    width: 40px;
-    background-color: #be0000;
-    border-radius: 50%;
-    text-align: center;
-    cursor: pointer;
 }
 
 @media only screen and (max-width: 1170px){

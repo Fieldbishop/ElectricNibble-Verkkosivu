@@ -128,3 +128,38 @@ footer article p{
         margin-right: 0;
     }
 }
+
+#cartIcon {
+    margin: 0;
+    position: fixed;
+    right: 1vw;
+    top: 1vw;
+
+    text-align: center;
+    cursor: pointer;
+}
+
+#cartIcon img {
+    height: 50px;
+    width: 50px;
+}
+
+#cartIcon:hover img{
+    filter: invert(1);
+}
+
+.circle {
+    position: fixed;
+    right: 3vw;
+    top: 3vw;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    background: #be0000;
+    border: #111111 solid 2px;
+}
+
+.circle p {
+    font-family: Space Mono, serif;
+    margin: 0;
+}

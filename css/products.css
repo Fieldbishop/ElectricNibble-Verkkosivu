@@ -8,33 +8,18 @@ body, html {
     top: 0;
 }
 
-
-.circle {
-    position: fixed;
-    left: 5px;
-    top: 5px;
-    height: 35px;
-    width: 35px;
-    background-color: #eeeeee;
-    border-radius: 45%;
-}
-
-.circle:hover {
-    background-color: #111111;
-    cursor: pointer;
-}
-
-
 aside {
     display: flex;
     flex-direction: column;
     position: fixed;
     left: -100%;
-    top: 100px;
+    top: 10%;
     width: auto;
     border: 2px solid #111111;
-    background: beige;
+    background: white;
     transition: all 0.25s 0.25s;
+    border-radius: 1vw;
+    font-family: Space Mono, serif;
 }
 
 .open {
@@ -48,11 +33,24 @@ aside ul {
 
 aside ul li {
     padding: 5px;
+    margin: 2px;
+    border: #111111 1px solid;
 }
 
 aside ul li:hover {
     cursor:pointer;
-    background: aqua;
+    background: #be0000;
+    color: white;
+}
+
+.selected {
+    background: #be0000;
+    color: white;
+}
+
+.notSelected {
+    background: white;
+    color: black;
 }
 
 
@@ -118,7 +116,7 @@ a img {
 }
 
 .animated {
-    height: 10%;
+    height: auto;
     margin: 0;
     padding: 3px;
     width: auto;
@@ -139,19 +137,10 @@ a img {
     padding: 0;
 }
 
-#cartIcon {
-    border: #111111 solid;
-    position: fixed;
-    right: 5px;
-    top: 5px;
-
-    height: 40px;
-    width: 40px;
-    background-color: #be0000;
-    border-radius: 50%;
-    text-align: center;
+.animated:hover {
     cursor: pointer;
 }
+
 
 @media only screen and (max-width: 768px){
     main{
@@ -175,11 +164,24 @@ a img {
     }
 
     .animated {
-        height: 80%;
+        height: auto;
     }
 
     .product:hover .animated {
         bottom: 80%;
         opacity: 1;
     }
+}
+
+.sidebarB {
+    position: fixed;
+    left: 5px;
+    top: 5px;
+    height: 35px;
+    width: 35px;
+}
+
+.sidebarB:hover {
+    cursor: pointer;
+    filter: invert(1);
 }

@@ -18,6 +18,7 @@ function addToCart() {
     .then(jsonData => {
         shop.addToCart(jsonData[productNum()]);
         shop.getItem();
+        iconCart();
         updateNum();
     });
     return "";
@@ -144,12 +145,5 @@ function tuoteSivu(i) {
 
 tuoteSivu(productNum());
 
-function updateNum(){
-    let cartNum = document.createElement('p');
-    cartNum.appendChild(document.createTextNode(String(shop.getItem().length)));
-    let buyButton = document.querySelector('#cartIcon');
-    buyButton.innerHTML = '';
-    buyButton.appendChild(cartNum);
-}
 
-updateNum();
+iconCart();

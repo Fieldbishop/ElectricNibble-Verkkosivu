@@ -99,7 +99,7 @@ a img {
 }
 
 .animated {
-    height: 10%;
+    height: auto;
     margin: 0;
     padding: 3px;
     width: auto;
@@ -120,18 +120,7 @@ a img {
     padding: 0;
 }
 
-
-#cartIcon {
-    border: #111111 solid;
-    position: fixed;
-    right: 5px;
-    top: 5px;
-
-    height: 40px;
-    width: 40px;
-    background-color: #be0000;
-    border-radius: 50%;
-    text-align: center;
+.animated:hover {
     cursor: pointer;
 }
 
@@ -158,7 +147,7 @@ a img {
     }
 
     .animated {
-        height: 60%;
+        height: auto;
     }
 
     .product:hover .animated {

@@ -4,7 +4,7 @@ body, html {
 }
 
 #top {
-    height: 10%;
+    height: 15%;
     width: 100%;
 }
 
@@ -17,19 +17,20 @@ main {
     padding: 8px;
     display: flex;
     justify-content: space-around;
-    height: 90%;
+    min-height: 90%;
 }
 
 main > div {
-    width: 25vw;
+    min-width: 25vw;
     padding: 10px;
     background-color: #eeeeee;
     text-align: center;
 }
 
 main h1 {
+    border: #111111 solid 2px;
     padding: 4px;
-    background-color: crimson;
+    background-color: #be0000;
     font-family: BioRhyme, serif;
 }
 
