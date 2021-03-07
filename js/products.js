@@ -24,6 +24,7 @@ for (let i = 0; i < li.length; i++) {
                 li[i].className = "";
             }
             f.target.className = "selected";
+            scroll(0,0);
             updateProducts(jsonData, i);
         });
     });
