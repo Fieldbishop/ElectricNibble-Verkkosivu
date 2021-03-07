@@ -91,21 +91,21 @@ function tuoteSivu(i) {
 
         let specsTeksti = document.createElement('p');
         specsTeksti.className = "specs";
-        specsTeksti.innerHTML = "Tekniset tiedot:";
+        specsTeksti.innerHTML = "Technical info:";
         tekstiDiv.appendChild(specsTeksti);
 
         let tekninenUL = document.createElement('ul');                              //specsilista
         let kategoriaLI = document.createElement('li');
-        kategoriaLI.innerHTML = "kategoria: " + category;
+        kategoriaLI.innerHTML = "category: " + category;
         tekninenUL.appendChild(kategoriaLI);
         let korkeusLI = document.createElement('li');
-        korkeusLI.innerHTML = "korkeus: " + spec6 + " U";
+        korkeusLI.innerHTML = "height: " + spec6 + " U";
         tekninenUL.appendChild(korkeusLI);
         let leveysLI = document.createElement('li');
-        leveysLI.innerHTML = "leveys: " +spec5+ " hp";
+        leveysLI.innerHTML = "width: " +spec5+ " hp";
         tekninenUL.appendChild(leveysLI);
         let syvyysLI = document.createElement('li');
-        syvyysLI.innerHTML = "syvyys: " +spec4+ " mm";
+        syvyysLI.innerHTML = "depth: " +spec4+ " mm";
         tekninenUL.appendChild(syvyysLI);
         let posLI = document.createElement('li');
         posLI.innerHTML = "+12V: " +spec1+ " mA";
@@ -120,19 +120,19 @@ function tuoteSivu(i) {
 
         let hintaTeksti = document.createElement('p');
         hintaTeksti.className = "hinta";
-        hintaTeksti.innerHTML = "Hinta: " + hinta + " euroa"
+        hintaTeksti.innerHTML = "Price: " + hinta + " euros"
         tekstiDiv.appendChild(hintaTeksti);
 
         let ostoskoriNappi = document.createElement('button');
         ostoskoriNappi.type = "button";
-        ostoskoriNappi.innerHTML = "Lisää ostoskoriin"
+        ostoskoriNappi.innerHTML = "Add to cart"
         ostoskoriNappi.addEventListener('click', addToCart);
         tekstiDiv.appendChild(ostoskoriNappi);
 
         let linkki = document.createElement('a');
         linkki.id = "linkki";
         linkki.href = url;
-        linkki.innerHTML = "Tuotteen omat sivut";
+        linkki.innerHTML = "Link to the manufacturer's web page";
         tekstiDiv.appendChild(linkki);
 
 
