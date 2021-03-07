@@ -136,6 +136,7 @@ div {
     width: 600px;
     margin-right: 50px;
     margin-top: 20px;
+
 }
 
 #location {
@@ -205,4 +206,8 @@ a img {
     .mapContainer article {
         margin: 0;
     }
+}
+
+header {
+    z-index: 1000;
 }

@@ -20,6 +20,7 @@
 
 **Kartta**
 - Kartta näyttää nyt myös ISS:n tämän hetkisen paikan kartalla
+- Siirrytty Google Mapsista Leaflet ja Mapboxiin
 
 **Kansiorakenne**
 - Valmisteltu lopullinen kansiorakenne
