@@ -68,13 +68,39 @@ function tuoteSivu(i) {
 
         let article = document.createElement('article');
 
-        let fig = document.createElement('figure');
-        fig.className = "tuoteKuva";
+        let tuoteKuvaSliderDiv = document.createElement('div');
+        tuoteKuvaSliderDiv.className = "tuoteKuvaSlider";
 
-        let image1 = document.createElement('img');                             //tähän säätöö kuvan kokoon
-        image1.src = kuva1;
-        fig.appendChild(image1);
-        article.appendChild(fig);
+        let slideShowContainerDiv = document.createElement('div');
+        slideShowContainerDiv.className="slideshow-container";
+
+        let tuoteKuvaDiv = document.createElement('div');
+        tuoteKuvaDiv.className = "mySlides fade";
+        tuoteKuvaDiv.style="display: block;";
+        let img1 = document.createElement('img');
+        img1.style="width:100%";
+        img1.src=kuva1;
+        tuoteKuvaDiv.appendChild(img1);
+
+        let tuoteKuvaDiv2 = document.createElement('div');
+        tuoteKuvaDiv2.className = "mySlides fade";
+        tuoteKuvaDiv.style="display: block;";
+        let img2 = document.createElement('img');
+        img2.style="width:100%";
+        img2.src=kuva2;
+        tuoteKuvaDiv2.appendChild(img2);
+
+        slideShowContainerDiv.appendChild(tuoteKuvaDiv);
+        slideShowContainerDiv.appendChild(tuoteKuvaDiv2);
+
+        slideShowContainerDiv.innerHTML += `
+        <a class=\"prev\" onclick=\"plusSlides(-1)\">&#10094;</a>
+        <a class=\"next\" onclick=\"plusSlides(1)\">&#10095;</a>`
+
+        tuoteKuvaSliderDiv.appendChild(slideShowContainerDiv);
+        tuoteKuvaSliderDiv.innerHTML += "<br>"
+
+        article.appendChild(tuoteKuvaSliderDiv);
 
         let tekstiDiv = document.createElement('div');
         tekstiDiv.id = "teksti";
@@ -145,5 +171,29 @@ function tuoteSivu(i) {
 }
 
 tuoteSivu(productNum());
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slides[slideIndex-1].style.display = "block";
+}
 
 iconCart();
