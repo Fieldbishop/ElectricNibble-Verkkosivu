@@ -14,8 +14,8 @@
       "width": 38,
       "height": 3
     },
-    "imageMain": "users.metropolia.fi/~jaakkna/Moduulikuvat/AkemiesCastleMain.jpg",
-    "imageSide": "users.metropolia.fi/~jaakkna/Moduulikuvat/AkemiesCastleSide.jpg",
+    "imageMain": "img/products/AkemiesCastleMain.jpg",
+    "imageSide": "img/products/AkemiesCastleSide.jpg",
     "url": "https://busycircuits.com/alm011/"
   },
   {
@@ -33,8 +33,8 @@
       "width": 18,
       "height": 3
     },
-    "imageMain": "users.metropolia.fi/~jaakkna/Moduulikuvat/AkemiesTaikoMain.jpg",
-    "imageSide": "users.metropolia.fi/~jaakkna/Moduulikuvat/AkemiesTaikoSide.jpg",
+    "imageMain": "img/products/AkemiesTaikoMain.jpg",
+    "imageSide": "img/products/Moduulikuvat/AkemiesTaikoSide.jpg",
     "url": "https://busycircuits.com/alm015/"
   },
   {
@@ -52,8 +52,8 @@
       "width": 6,
       "height": 3
     },
-    "imageMain": "users.metropolia.fi/~jaakkna/Moduulikuvat/MCOMain.jpg",
-    "imageSide": "users.metropolia.fi/~jaakkna/Moduulikuvat/MCOSide.jpg",
+    "imageMain": "img/products/MCOMain.jpg",
+    "imageSide": "img/products/MCOSide.jpg",
     "url": "https://busycircuits.com/alm021/"
   },
   {
@@ -71,8 +71,8 @@
       "width": 8,
       "height": 3
     },
-    "imageMain": "users.metropolia.fi/~jaakkna/Moduulikuvat/PamelasNewWorkoutMain.jpg",
-    "imageSide": "users.metropolia.fi/~jaakkna/Moduulikuvat/PamelasNewWorkoutSide.jpg",
+    "imageMain": "img/products/PamelasNewWorkoutMain.jpg",
+    "imageSide": "img/products/PamelasNewWorkoutSide.jpg",
     "url": "https://busycircuits.com/alm017/"
   },
   {
@@ -90,8 +90,8 @@
       "width": 13,
       "height": 3
     },
-    "imageMain": "users.metropolia.fi/~jaakkna/Moduulikuvat/DarkMatterMain.jpg",
-    "imageSide": "users.metropolia.fi/~jaakkna/Moduulikuvat/DarkMatterSide.jpg",
+    "imageMain": "img/products/DarkMatterMain.jpg",
+    "imageSide": "img/products/DarkMatterSide.jpg",
     "url": "https://bastl-instruments.com/eurorack/modules/dark-matter"
   },
   {
@@ -109,8 +109,8 @@
       "width": 16,
       "height": 3
     },
-    "imageMain": "users.metropolia.fi/~jaakkna/Moduulikuvat/WarhorseMain.jpg",
-    "imageSide": "users.metropolia.fi/~jaakkna/Moduulikuvat/WarhorseSide.jpg",
+    "imageMain": "img/products/WarhorseMain.jpg",
+    "imageSide": "img/products/WarhorseSide.jpg",
     "url": "http://www.arcaico.eu/warhorse/"
   },
   {
@@ -128,8 +128,8 @@
       "width": 10,
       "height": 3
     },
-    "imageMain": "users.metropolia.fi/~jaakkna/Moduulikuvat/RaverbMain.jpg",
-    "imageSide": "users.metropolia.fi/~jaakkna/Moduulikuvat/RaverbSide.jpg",
+    "imageMain": "img/products/RaverbMain.jpg",
+    "imageSide": "img/products/RaverbSide.jpg",
     "url": "http://www.arcaico.eu/raverb/"
   },
   {
@@ -147,8 +147,8 @@
       "width": 20,
       "height": 3
     },
-    "imageMain": "users.metropolia.fi/~jaakkna/Moduulikuvat/MathsMain.jpg",
-    "imageSide": "users.metropolia.fi/~jaakkna/Moduulikuvat/MathsSide.jpg",
+    "imageMain": "img/products/MathsMain.jpg",
+    "imageSide": "img/products/MathsSide.jpg",
     "url": "http://www.makenoisemusic.com/modules/maths"
   },
   {
@@ -166,8 +166,8 @@
       "width": 4,
       "height": 3
     },
-    "imageMain": "users.metropolia.fi/~jaakkna/Moduulikuvat/DistingMK4Main.jpg",
-    "imageSide": "users.metropolia.fi/~jaakkna/Moduulikuvat/DistingMK4Side.jpg",
+    "imageMain": "img/products/DistingMK4Main.jpg",
+    "imageSide": "img/products/DistingMK4Side.jpg",
     "url": "https://www.expert-sleepers.co.uk/disting.html"
   },
   {
@@ -185,8 +185,8 @@
       "width": 12,
       "height": 3
     },
-    "imageMain": "users.metropolia.fi/~jaakkna/Moduulikuvat/LollipopMain.jpg",
-    "imageSide": "users.metropolia.fi/~jaakkna/Moduulikuvat/LollipopSide.jpg",
+    "imageMain": "img/products/LollipopMain.jpg",
+    "imageSide": "img/products/LollipopSide.jpg",
     "url": "https://www.godsbox.co.uk/lollipop.html"
   },
   {
@@ -204,8 +204,8 @@
       "width": 6,
       "height": 3
     },
-    "imageMain": "users.metropolia.fi/~jaakkna/Moduulikuvat/TallinMain.jpg",
-    "imageSide": "users.metropolia.fi/~jaakkna/Moduulikuvat/TallinSide.jpg",
+    "imageMain": "img/products/TallinMain.jpg",
+    "imageSide": "img/products/TallinSide.jpg",
     "url": "http://xaocdevices.com/main/tallin/"
   },
   {
@@ -223,8 +223,8 @@
       "width": 10,
       "height": 3
     },
-    "imageMain": "users.metropolia.fi/~jaakkna/Moduulikuvat/BatumiMain.jpg",
-    "imageSide": "users.metropolia.fi/~jaakkna/Moduulikuvat/BatumiSide.jpg",
+    "imageMain": "img/products/BatumiMain.jpg",
+    "imageSide": "img/products/BatumiSide.jpg",
     "url": "http://xaocdevices.com/main/batumi/"
   },
   {
@@ -242,8 +242,8 @@
       "width": 10,
       "height": 3
     },
-    "imageMain": "users.metropolia.fi/~jaakkna/Moduulikuvat/AtaraxicIteritasMain.jpg",
-    "imageSide": "users.metropolia.fi/~jaakkna/Moduulikuvat/AtaraxicIteritasSide.jpg",
+    "imageMain": "img/products/AtaraxicIteritasMain.jpg",
+    "imageSide": "img/products/AtaraxicIteritasSide.jpg",
     "url": "https://www.noiseengineering.us/shop/ataraxic-iteritas"
   },
   {
@@ -261,8 +261,8 @@
       "width": 10,
       "height": 3
     },
-    "imageMain": "users.metropolia.fi/~jaakkna/Moduulikuvat/ManisIteritasMain.jpg",
-    "imageSide": "users.metropolia.fi/~jaakkna/Moduulikuvat/ManisIteritasSide.jpg",
+    "imageMain": "img/products/ManisIteritasMain.jpg",
+    "imageSide": "img/products/ManisIteritasSide.jpg",
     "url": "https://www.noiseengineering.us/shop/manis-iteritas"
   },
   {
@@ -280,8 +280,8 @@
       "width": 10,
       "height": 3
     },
-    "imageMain": "users.metropolia.fi/~jaakkna/Moduulikuvat/BasimilusIteritasAlterMain.jpg",
-    "imageSide": "users.metropolia.fi/~jaakkna/Moduulikuvat/BasimilusIteritasAlterSide.jpg",
+    "imageMain": "img/products/BasimilusIteritasAlterMain.jpg",
+    "imageSide": "img/products/BasimilusIteritasAlterSide.jpg",
     "url": "https://www.noiseengineering.us/shop/basimilus-iteritas-alter"
   },
   {
@@ -299,8 +299,8 @@
       "width": 0,
       "height": 3
     },
-    "imageMain": "users.metropolia.fi/~jaakkna/Moduulikuvat/DesmodusVersioMain.jpg",
-    "imageSide": "users.metropolia.fi/~jaakkna/Moduulikuvat/DesmodusVersioSide.jpg",
+    "imageMain": "img/products/DesmodusVersioMain.jpg",
+    "imageSide": "img/products/DesmodusVersioSide.jpg",
     "url": "https://www.noiseengineering.us/shop/desmodus-versio"
   },
   {
@@ -318,8 +318,8 @@
       "width": 4,
       "height": 3
     },
-    "imageMain": "users.metropolia.fi/~jaakkna/Moduulikuvat/SincBucinaMain.jpg",
-    "imageSide": "users.metropolia.fi/~jaakkna/Moduulikuvat/SincBucinaSide.jpg",
+    "imageMain": "img/products/SincBucinaMain.jpg",
+    "imageSide": "img/products/SincBucinaSide.jpg",
     "url": "https://schneidersladen.de/de/noise-engineering-sinc-bucina"
   },
   {
@@ -337,8 +337,8 @@
       "width": 16,
       "height": 3
     },
-    "imageMain": "users.metropolia.fi/~jaakkna/Moduulikuvat/VorticesMain.jpg",
-    "imageSide": "users.metropolia.fi/~jaakkna/Moduulikuvat/VorticesSide.jpg",
+    "imageMain": "img/products/VorticesMain.jpg",
+    "imageSide": "img/products/VorticesSide.jpg",
     "url": "http://www.steadystatefate.com/vortices"
   },
   {
@@ -356,8 +356,8 @@
       "width": 4,
       "height": 3
     },
-    "imageMain": "users.metropolia.fi/~jaakkna/Moduulikuvat/AutodyneMain.jpg",
-    "imageSide": "users.metropolia.fi/~jaakkna/Moduulikuvat/AutodyneSide.jpg",
+    "imageMain": "img/products/AutodyneMain.jpg",
+    "imageSide": "img/products/AutodyneSide.jpg",
     "url": "http://www.steadystatefate.com/newss/2019/5/28/autodyne-starts-shipping-first-week-of-june-2019?rq=autodyne"
   },
   {
@@ -375,8 +375,8 @@
       "width": 4,
       "height": 3
     },
-    "imageMain": "users.metropolia.fi/~jaakkna/Moduulikuvat/MSCLMain.jpg",
-    "imageSide": "users.metropolia.fi/~jaakkna/Moduulikuvat/MSCLSide.jpg",
+    "imageMain": "img/products/MSCLMain.jpg",
+    "imageSide": "img/products/MSCLSide.jpg",
     "url": "https://wmdevices.com/products/mscl"
   },
   {
@@ -394,8 +394,8 @@
       "width": 4,
       "height": 3
     },
-    "imageMain": "users.metropolia.fi/~jaakkna/Moduulikuvat/C4RBNMain.jpg",
-    "imageSide": "users.metropolia.fi/~jaakkna/Moduulikuvat/C4RBNSide.jpg",
+    "imageMain": "img/products/C4RBNMain.jpg",
+    "imageSide": "img/products/C4RBNSide.jpg",
     "url": "https://wmdevices.com/products/c4rbn"
   },
   {
@@ -413,8 +413,8 @@
       "width": 32,
       "height": 3
     },
-    "imageMain": "users.metropolia.fi/~jaakkna/Moduulikuvat/NerdseqMain.jpg",
-    "imageSide": "users.metropolia.fi/~jaakkna/Moduulikuvat/NerdseqSide.jpg",
+    "imageMain": "img/products/NerdseqMain.jpg",
+    "imageSide": "img/products/NerdseqSide.jpg",
     "url": "https://xor-electronics.com/nerdseq/"
   },
   {
@@ -432,8 +432,8 @@
       "width": 8,
       "height": 3
     },
-    "imageMain": "users.metropolia.fi/~jaakkna/Moduulikuvat/uO_cMain.jpg",
-    "imageSide": "users.metropolia.fi/~jaakkna/Moduulikuvat/uO_cSide.jpg",
+    "imageMain": "img/products/uO_cMain.jpg",
+    "imageSide": "img/products/uO_cSide.jpg",
     "url": "https://ornament-and-cri.me/"
   },
   {
@@ -451,8 +451,8 @@
       "width": 14,
       "height": 1
     },
-    "imageMain": "users.metropolia.fi/~jaakkna/Moduulikuvat/DigitankMain.jpg",
-    "imageSide": "users.metropolia.fi/~jaakkna/Moduulikuvat/DigitankSide.jpg",
+    "imageMain": "img/products/DigitankMain.jpg",
+    "imageSide": "img/products/DigitankSide.jpg",
     "url": "https://intellijel.com/shop/eurorack/1u/digiverb-1u/"
   },
   {
@@ -470,8 +470,8 @@
       "width": 24,
       "height": 1
     },
-    "imageMain": "users.metropolia.fi/~jaakkna/Moduulikuvat/Multi-FXMain.jpg",
-    "imageSide": "users.metropolia.fi/~jaakkna/Moduulikuvat/Multi-FXSide.jpg",
+    "imageMain": "img/products/Multi-FXMain.jpg",
+    "imageSide": "img/products/Multi-FXSide.jpg",
     "url": "https://intellijel.com/shop/eurorack/1u/multi-fx-1u/"
   },
   {
@@ -489,8 +489,8 @@
       "width": 12,
       "height": 3
     },
-    "imageMain": "users.metropolia.fi/~jaakkna/Moduulikuvat/PrismMain.jpg",
-    "imageSide": "users.metropolia.fi/~jaakkna/Moduulikuvat/PrismSide.jpg",
+    "imageMain": "img/products/PrismMain.jpg",
+    "imageSide": "img/products/PrismSide.jpg",
     "url": "https://www.qubitelectronix.com/shop/prism"
   }
 ]
