@@ -2,16 +2,14 @@
 
 const main = document.querySelector('main');    //Näyteikkuna johon laitetaan näkyville 6 tuotetta
 
-const url = "modules.json";
+const url = "modules.json";     //Url josta Moduuli JSON haetaan
 
-const shop = new ShoppingCart();
+const shop = new ShoppingCart();    //Luodaan uusi ostoskori, joka hakee ostoskorin tuotteiden määrän
 
-shop.getItem();
-
-fetch(url)
+fetch(url)      //Haetaan Moduuli JSON
 .then(response => response.json())
 .then((jsonData) => {
-    mainPage(jsonData);
+    mainPage(jsonData);     //Rakennetaan JSON:in pohjalta pääsivu
 });
 
 
@@ -82,10 +80,6 @@ function mainPage(json) {
         figure.appendChild(infoContainer);
         article.appendChild(figure);
 
-        article.addEventListener('click', function() {
-            console.log(num[i]);
-        });
-
         main.appendChild(article);
         //document.getElementById(String(num[i])).style.backgroundImage = "url('" + json[num[i]].imageMain + "')";
 
@@ -118,4 +112,4 @@ function mainPage(json) {
 
 }
 
-iconCart();
+iconCart();     //Näytetään tuotteiden määrä ostoskorissa

@@ -15,6 +15,9 @@
 - Ostoskorille oma ikoni ja pallo joka kertoo kuinka monta esinetta korissa
 - Muutettu ostoskorin tyylittelyä
 
+**Javascript**
+- Siistitty ja kommentoitu koodia
+
 
 ## 4.3.2021
 **Ostoskori**

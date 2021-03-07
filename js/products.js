@@ -1,34 +1,33 @@
 'use strict';
 
-const url = "modules.json";
+const url = "modules.json";     //Url josta Moduuli JSON haetaan
 
-const shop = new ShoppingCart();
+const shop = new ShoppingCart();    //Luodaan uusi ostoskori, joka hakee ostoskorin tuotteiden määrän
 
-shop.getItem();
-
-fetch(url)
+fetch(url)      //Haetaan Moduuli JSON
 .then(response => response.json())
 .then((jsonData) => {
-    updateProducts(jsonData, 0);
+    updateProducts(jsonData, 0);    //Rakennetaan JSON:in pohjalta sivu
 });
 
 //Event listener sivupalkin kategorioille
-const li = document.getElementsByTagName('li');
+const li = document.getElementsByTagName('li');     //Haetaan sivupalkki
 
 for (let i = 0; i < li.length; i++) {
-    li[i].addEventListener('click', function(f) {
+    li[i].addEventListener('click', function(f) {         //Klikkaamalla kategoriaa, haetaan moduuli JSON
         fetch(url)
         .then(response => response.json())
         .then((jsonData) => {
-            for(let i = 0; i < li.length; i++){
+            for(let i = 0; i < li.length; i++){                                 //Muutetaan kaikista muista kategorioista ei valittuja
                 li[i].className = "";
             }
-            f.target.className = "selected";
-            scroll(0,0);
-            updateProducts(jsonData, i);
+            f.target.className = "selected";                                    //Ja klikatusta valittu muuttamalla väri
+            scroll(0,0);                                                        //Asetetaan näkymä ylös
+            updateProducts(jsonData, i);                                        //Rakennetaan JSON:in ja kategorian pohjalta sivu
         });
     });
 }
+
 
 //Tuo esiin ja piilota sivupalkki
 const cat = document.getElementsByClassName('sidebarB');
@@ -46,10 +45,11 @@ cat[0].addEventListener('click', function() {
     open = !open; //Toggle button
 });
 
-const main = document.querySelector('main');
+
+const main = document.querySelector('main');    //Valitaan elementti jonka sisälle tuotteet rakennetaan
 
 function updateProducts(json, num) {
-    main.innerHTML = '<div></div>';
+    main.innerHTML = '<div></div>';     //Tyhjennetään sivu
 
     /*
     Oikean JSON:in category arvo: json[i].category
@@ -72,6 +72,10 @@ function updateProducts(json, num) {
             VCA                 14
 
         }
+
+    Jos kategoria on jotain ja tuote ei ole kategoriaa, tarkastetaan seuraava tuote
+    Jos kategoria on jotain ja tuote on samaa kategoriaa, päästään loopin loppuun jossa luodaan elementti tuotteelle
+
     */
 
     for (let i = 0; i < json.length; i++) {
@@ -109,9 +113,6 @@ function updateProducts(json, num) {
 
             let article = document.createElement('article');
             article.className = 'product';
-            article.addEventListener('click', function(){
-                console.log(i);
-            });
 
             let figure = document.createElement('figure');
             let a = document.createElement('a');
@@ -150,10 +151,6 @@ function updateProducts(json, num) {
             figure.appendChild(infoContainer);
             article.appendChild(figure);
 
-            article.addEventListener('click', function() {
-                console.log(i);
-            });
-
             main.appendChild(article);
             //document.getElementById(String(num[i])).style.backgroundImage = "url('" + json[num[i]].imageMain + "')";
 
@@ -171,6 +168,23 @@ function updateProducts(json, num) {
 
     }
 
+    /*
+    Tuottaa seuraavan elementin
+    <article class="product">
+        <figure>
+            <a class="productImg" id="0" href="./aProduct.html#0" style="background-image: url(&quot;img/mainImage&quot;);">
+                <img src="img/secondaryImage.jpg">
+            </a>
+            <div class="animated">
+                <p>Name</p>
+                <p>Price €</p>
+            </div>
+        </figure>
+    </article>
+
+    Kaksi päällekkäistä kuvaa saadaan piilottamalla toinen ja näyttämällä se on hover
+     */
+
 }
 
-iconCart();
+iconCart();     //Näytetään tuotteiden määrä ostoskorissa

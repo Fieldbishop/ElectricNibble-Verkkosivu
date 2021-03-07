@@ -2,24 +2,25 @@
 
 const source = "modules.json";
 
-const shop = new ShoppingCart();
+const shop = new ShoppingCart();        //Luodaan ostoskori-olio
 
+//Klikatessa tuotetta, se avaa tuotesivun jossa lopussa on "#" ja tuotteen index numero
+//Index numeron avulla tuotteen tiedot haetaan JSON:ista ja tiedot tuodaan esille
 function productNum() {
-    let s = document.URL;
-    s = s.slice(-2);
-    s = s.replace('#', '');
+    let s = document.URL;   //Tallentaa nykyisen URL:in
+    s = s.slice(-2);        //Ottaa URL:ista kaksi viimeistä merkkiä
+    s = s.replace('#', ''); //Jos yksi niistä on "#", poistaa sen
 
-    return Number(s);
+    return Number(s);       //Palauttaa index numeron
 }
 
+//Lisää tuote ostoskoriin
 function addToCart() {
-    fetch(source)
+    fetch(source)   //Haetaan tuotteen tiedot JSON:ista
     .then(response => response.json())
     .then(jsonData => {
-        shop.addToCart(jsonData[productNum()]);
-        shop.getItem();
-        iconCart();
-        updateNum();
+        shop.addToCart(jsonData[productNum()]);     //Lisätään se ostoskoriin
+        iconCart(); //Päivitetään ostoskorikuvaketta
     });
     return "";
 }
@@ -144,6 +145,5 @@ function tuoteSivu(i) {
 }
 
 tuoteSivu(productNum());
-
 
 iconCart();

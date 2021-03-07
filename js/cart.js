@@ -1,14 +1,11 @@
 'use strict';
 
-const shop = new ShoppingCart();
+const shop = new ShoppingCart();    //Luodaan ostoskori, josta tuotteet näytetään sivulla
 
-shop.getName(0);
-
-const article = document.querySelector('#shoplist');
+const article = document.querySelector('#shoplist');    //Valitaan missä ostoskorin tuotteet näytetään
 
 function createShoppingCart() {
-    article.innerHTML = '';
-    console.log(shop.getItem().length);
+    article.innerHTML = ''; //Tyhjennetään näytetyt tuotteet
 
     if(shop.getItem().length !== 0) {
         for (let i = 0; i < shop.getItem().length; i++) {
@@ -21,11 +18,9 @@ function createShoppingCart() {
 
             button.appendChild(document.createTextNode("-"));
 
+            //Poisto nappula poistaa tuotteen ostoskorista ja rakentaa elementin uudelleen
             button.addEventListener('click', function() {
-                console.log("Remove this:");
-                console.log(i);
                 shop.removeFromCart(i);
-                console.log(shop.getItem());
                 createShoppingCart();
             });
 
@@ -40,11 +35,14 @@ function createShoppingCart() {
 
         }
 
+        //Loppuun kokonaissumma
         let h2 = document.createElement('h2');
         h2.appendChild(
             document.createTextNode("Total: " + String(shop.getTotal()) + "€"));
         article.appendChild(h2);
+
     } else {
+        //Jos ostoskori tyhjä, näytetään viesti ja piilotetaan ostonappula
         let name = document.createElement('h1');
         name.appendChild(document.createTextNode("I think you need more modules..."));
         article.appendChild(name);
@@ -54,6 +52,7 @@ function createShoppingCart() {
 
 }
 
+//Ostaessa tyhjennetään ostoskori ja näytetään viesti jossa tuotteiden määrä ja kokonaishinta
 let buyButton = document.querySelector('#buy');
 buyButton.addEventListener('click', function() {
     alert("Thank you for buying " + shop.getItem().length + " item(s)!\n" +
