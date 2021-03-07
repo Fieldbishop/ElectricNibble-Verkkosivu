@@ -21,6 +21,10 @@
 **Kartta**
 - Kartta näyttää nyt myös ISS:n tämän hetkisen paikan kartalla
 
+**Kansiorakenne**
+- Valmisteltu lopullinen kansiorakenne
+- HTML ja JS koodin valmisteltu lopulliseen kansiorakenteeseen
+
 
 ## 4.3.2021
 **Ostoskori**

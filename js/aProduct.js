@@ -171,6 +171,7 @@ function tuoteSivu(i) {
 }
 
 tuoteSivu(productNum());
+iconCart();
 
 let slideIndex = 1;
 showSlides(slideIndex);
@@ -195,5 +196,3 @@ function showSlides(n) {
     }
     slides[slideIndex-1].style.display = "block";
 }
-
-iconCart();
