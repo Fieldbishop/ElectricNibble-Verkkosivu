@@ -4,14 +4,7 @@ body, html {
 }
 
 #top {
-    height: 10%;
-    width: 100%;
-}
-
-header {
-    display: flex;
-    justify-content: center;
-    background-color: #be0000;
+    height: 15%;
     width: 100%;
 }
 
@@ -20,56 +13,24 @@ header {
     top: 0;
 }
 
-header a {
-    color: #111111;
-    text-align: center;
-    text-decoration: none;
-    display: inline;
-    padding: 14px 100px;
-    font-family: BioRhyme, serif;
-    font-size: 28px;
-}
-
-header a:hover {
-    background-color: black;
-    color: aliceblue;
-}
-
-#logo {
-    max-height: 80px;
-    margin: 0 auto;
-}
-
-header figure{
-    max-height: 80px;
-    margin: 5px;
-    padding-left: 35px;
-}
-
-#linkit{
-    justify-content: center;
-    margin: 0 auto;
-    padding-top: 23px;
-}
-
-
 main {
     padding: 8px;
     display: flex;
     justify-content: space-around;
-    height: 90%;
+    min-height: 90%;
 }
 
 main > div {
-    width: 25vw;
+    min-width: 25vw;
     padding: 10px;
     background-color: #eeeeee;
     text-align: center;
 }
 
 main h1 {
+    border: #111111 solid 2px;
     padding: 4px;
-    background-color: crimson;
+    background-color: #be0000;
     font-family: BioRhyme, serif;
 }
 
@@ -98,48 +59,6 @@ main p {
 
 .remove {
     margin: 3px;
-}
-
-footer {
-    background: #bebebe;
-    min-height: 200px;
-    display: flex;
-}
-
-footer img {
-    max-height: 100px;
-    position: relative;
-    top: 30px;
-    left: 10px;
-}
-
-footer figure{
-    height: 100px;
-    width: 100px;
-
-}
-
-footer article{
-    margin: 0;
-    height: 50px;
-}
-
-footer article p{
-    font-family: Space Mono, serif;
-    font-size: 22px;
-    margin-top: 80px;
-    height: 100px;
-}
-
-#nimet{
-    position: relative;
-    left: 50%;
-    bottom: 30px;
-}
-
-
-#nimet p{
-    font-size: 18px;
 }
 
 .hidden {

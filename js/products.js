@@ -16,17 +16,22 @@ fetch(url)
 const li = document.getElementsByTagName('li');
 
 for (let i = 0; i < li.length; i++) {
-    li[i].addEventListener('click', function() {
+    li[i].addEventListener('click', function(f) {
         fetch(url)
         .then(response => response.json())
         .then((jsonData) => {
+            for(let i = 0; i < li.length; i++){
+                li[i].className = "";
+            }
+            f.target.className = "selected";
+            scroll(0,0);
             updateProducts(jsonData, i);
         });
     });
 }
 
 //Tuo esiin ja piilota sivupalkki
-const cat = document.getElementsByClassName('circle');
+const cat = document.getElementsByClassName('sidebarB');
 const sideBar = document.getElementById('sidebar');
 let open = false;
 
@@ -137,6 +142,11 @@ function updateProducts(json, num) {
 
             infoContainer.appendChild(name);
             infoContainer.appendChild(price);
+
+            infoContainer.addEventListener("click", function(){
+                window.open('./aProduct.html#' + i, '_self');
+            });
+
             figure.appendChild(infoContainer);
             article.appendChild(figure);
 
@@ -163,8 +173,4 @@ function updateProducts(json, num) {
 
 }
 
-let cartNum = document.createElement('p');
-cartNum.appendChild(document.createTextNode(String(shop.getItem().length)));
-let buyButton = document.querySelector('#cartIcon');
-buyButton.appendChild(cartNum);
-
+iconCart();

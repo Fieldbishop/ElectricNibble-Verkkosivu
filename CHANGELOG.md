@@ -1,8 +1,25 @@
 # Changelog
 
+## 7.3.2021
+**Tyylittely**
+- Muutettu tyylittelyä
+- Tuotteen info laatikkoa painamalla viedään tuotesivulle
+- Infolaatikon height muutettu "height: auto"
+
+**Kategoria sivupalkki**
+- Ikoni asetettu ja tyylitelty
+- Sivupalkki tyylitetty uudelleen
+- Asetettu väri, joka kertoo mikä kategoria näkyvissä
+
+**Ostoskori**
+- Ostoskorille oma ikoni ja pallo joka kertoo kuinka monta esinetta korissa
+- Muutettu ostoskorin tyylittelyä
+
+
 ## 4.3.2021
 **Ostoskori**
 - Ostoskori toteutettu kokonaan
+
 
 ## 3.3.2021
 
@@ -59,7 +76,6 @@
 - On Hover kuvake vaihtuu. Background-image ja img elementti päällekkäin
 - Tuotteet Json Arraysta
 - Tuotteet tuodaan satunnaisesti näyteikkunaan Json arraysta
-
 
 **Sticky header**
 - Headeri omalle skriptilleen: sticky.js

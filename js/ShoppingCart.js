@@ -64,3 +64,16 @@ class ShoppingCart {
     }
 
 }
+
+function iconCart() {
+    if(shop.getItem().length !== 0) {
+        let div = document.createElement('div');
+        let cartNum = document.createElement('p');
+        cartNum.appendChild(
+            document.createTextNode(String(shop.getItem().length)));
+        let buyButton = document.querySelector('#cartIcon');
+        div.className = "circle";
+        div.appendChild(cartNum);
+        buyButton.appendChild(div);
+    }
+}

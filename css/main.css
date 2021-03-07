@@ -30,45 +30,6 @@ body, html {
 }
 
 
-header {
-    display: flex;
-    justify-content: center;
-    background-color: #be0000;
-    width: 100%;
-    font-size: 25px;
-}
-
-header a {
-    color: #111111;
-    text-align: center;
-    text-decoration: none;
-    display: inline;
-    padding-right: 100px;
-    padding-left: 100px;
-    font-family: BioRhyme, serif;
-    font-size: 28px;
-}
-
-header a:hover {
-    background-color: black;
-    color: aliceblue;
-}
-
-#logo {
-    max-height: 100px;
-    position: relative;
-    bottom: 15px;
-}
-
-header figure{
-    height: 70px;
-}
-
-#linkit{
-    margin: 0 auto;
-    padding-top: 40px;
-}
-
 .nonSticky {
     position: absolute;
     bottom: 0;
@@ -84,8 +45,9 @@ header figure{
 
 main {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: space-around;
 }
 
 .product {
@@ -97,6 +59,10 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /*overflow: hidden;*/
+}
+
+.product a{
     overflow: hidden;
 }
 
@@ -121,8 +87,8 @@ article figure {
 
 main article p{
     margin-top: 60px;
-    font-family: Space Mono, serif;
-    font-size: 20px;
+    font-family: "Space Mono", serif;
+    font-size: 16px;
 }
 
 a img {
@@ -133,6 +99,7 @@ a img {
 }
 
 .animated {
+    height: auto;
     margin: 0;
     padding: 3px;
     width: auto;
@@ -140,10 +107,12 @@ a img {
     position: relative;
     bottom: 0;
     transition: bottom .25s ease-out 100ms;
+    opacity: 0;
 }
 
 .product:hover .animated {
-    bottom: 200px;
+    bottom: 15%;
+    opacity: 1;
 }
 
 .animated p {
@@ -151,116 +120,38 @@ a img {
     padding: 0;
 }
 
-
-footer {
-    margin-top: 35px;
-    background: #bebebe;
-    min-height: 200px;
-    display: flex;
-}
-
-footer img {
-    max-height: 100px;
-    position: relative;
-    top: 30px;
-    left: 10px;
-}
-
-footer figure{
-    height: 100px;
-    width: 100px;
-
-}
-
-footer article{
-    margin: 0;
-    height: 50px;
-}
-
-footer article p{
-    font-family: Space Mono, serif;
-    font-size: 22px;
-    margin-top: 80px;
-    height: 100px;
-}
-
-#nimet{
-    position: relative;
-    margin-right: 0;
-    margin-left: auto;
-    right: 50px;
-    bottom: 20px;
-}
-
-
-#nimet p{
-    font-size: 18px;
-}
-
-#cartIcon {
-    border: #111111 solid;
-    position: fixed;
-    right: 5px;
-    top: 5px;
-
-    height: 40px;
-    width: 40px;
-    background-color: #be0000;
-    border-radius: 50%;
-    text-align: center;
+.animated:hover {
     cursor: pointer;
 }
 
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 1170px){
     main{
         width: 100%;
+    }
+
+    #ye {
+        display: flex;
+        flex-direction: column;
+        position: inherit;
+        align-items: center;
+        background: #c6c6c6;
+        margin-left: 8px;
+        max-width: 100%;
     }
 
     #ye h3, #ye p {
         margin: 3px;
         font-size: 2.5vw;
-        font-family: Space Mono, serif;
+        font-family: "Space Mono", serif;
     }
 
-    header a {
-        font-size: 18px;
-        padding: 20px;
+    .animated {
+        height: auto;
     }
 
-    header figure{
-        margin-left: 10px;
-        margin-right: 0;
-    }
-
-    header{
-        width: 100%;
-    }
-
-    footer{
-        width: 100%;
-    }
-
-    footer figure {
-        margin: 0;
-    }
-
-    footer img{
-        max-height: 80px;
-        top:50px;
-    }
-
-    footer article p{
-        font-family: Space Mono, serif;
-        font-size: 18px;
-        margin-left: 0;
-        margin-top: 80px;
-        height: 100px;
-    }
-
-    #nimet p{
-        font-size: 15px;
-        margin-left: auto;
-        margin-right: 0;
+    .product:hover .animated {
+        bottom: 80%;
+        opacity: 1;
     }
 }

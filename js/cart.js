@@ -45,7 +45,6 @@ function createShoppingCart() {
             document.createTextNode("Total: " + String(shop.getTotal()) + "€"));
         article.appendChild(h2);
     } else {
-        console.log("HEY");
         let name = document.createElement('h1');
         name.appendChild(document.createTextNode("I think you need more modules..."));
         article.appendChild(name);
