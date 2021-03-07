@@ -57,10 +57,10 @@ function tuoteSivu(i) {
         */
 
 
-        /*let kuva1 = jsonData[i].imageMain;                    //oikeat kuvat
-        let kuva2 = jsonData[i].imageSide;*/
-        let kuva1 = "img/samBot.jpg";                           //placeholder kuvat
-        let kuva2 = "img/lmmao.jpg";
+        let kuva1 = jsonData[i].imageMain;                    //oikeat kuvat
+        let kuva2 = jsonData[i].imageSide;
+        /*let kuva1 = "img/samBot.jpg";                           //placeholder kuvat
+        let kuva2 = "img/lmmao.jpg";*/
 
 
 
