@@ -37,12 +37,10 @@ main {
 }
 
 .textAndImg{
-    position: relative;
-    width: 100vw;
     display: flex;
     padding: 15px;
-    margin: 15px;
     align-items: center;
+    max-width: 90vw;
 }
 /*
     max-width: 55vw;
@@ -51,6 +49,7 @@ main {
  */
 .textAndImg article{
     width: 70vw;
+    padding: 20px;
 }
 .textAndImg article h1{
     margin-top: 50px;
@@ -64,9 +63,10 @@ main {
 }
 
 #Mondo{
-    max-width: 20vw;
-    max-height: 25vw;
-    padding-left: 20px;
+    max-width: 40vw;
+    max-height: 50vw;
+    margin-left: 20px;
+    margin-top: 50px;
 }
 /*
     display: flex;
