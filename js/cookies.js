@@ -18,7 +18,6 @@ function getCookie(cookie) {
         }
         //Palautetaan DATA osion data
         if(c.indexOf(name) === 0) {
-            console.log(c.substring(name.length, c.length));
             return c.substring(name.length, c.length);
         }
     }
