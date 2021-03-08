@@ -64,6 +64,10 @@ main{
 * {box-sizing:border-box}
 
 /* Slideshow container */
+.tuoteKuvaSlider{
+    display: flex;
+    align-items: center;
+}
 .slideshow-container {
 
     position: relative;
