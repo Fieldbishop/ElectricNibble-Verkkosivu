@@ -24,8 +24,9 @@ header a:hover {
 
 
 #logo {
-    max-height: 100px;
+    display: flex;
     position: relative;
+    max-height: 100px;
     bottom: 15px;
 }
 
@@ -115,6 +116,7 @@ footer article p {
 }
 
 .circle p {
+    display: block;
     text-align: center;
     font-family: "Space Mono", serif;
     font-size: 13px;

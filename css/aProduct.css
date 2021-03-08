@@ -4,8 +4,6 @@ body, html {
 }
 
 #tuoteInfoDiv{
-    display: flex;
-    justify-content: center;
     padding: 50px;
 }
 
@@ -147,12 +145,6 @@ main{
         width: 100%;
     }
 
-    #tuoteInfoDiv{
-        width: auto;
-        display: block;
-        flex-flow: column;
-    }
-
     #tuoteInfoDiv article{
         display: block;
     }
@@ -185,7 +177,6 @@ main{
     ul{
         margin-top: 10px;
         margin-left: 0;
-        padding: unset;
     }
 
     #tuoteInfoDiv article li{
@@ -212,6 +203,7 @@ main{
         display: flex;
         justify-content: center;
     }
+
     .prev, .next{
         top:35%
     }

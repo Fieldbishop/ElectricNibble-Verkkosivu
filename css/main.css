@@ -31,7 +31,6 @@ body, html {
 
 
 .nonSticky {
-    display: flex;
     position: absolute;
     bottom: 0;
     justify-content: start;
@@ -60,7 +59,6 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /*overflow: hidden;*/
 }
 
 .product a{
@@ -132,8 +130,6 @@ a img {
     }
 
     #ye {
-        display: flex;
-        flex-direction: column;
         position: inherit;
         align-items: center;
         background: #c6c6c6;
