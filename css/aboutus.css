@@ -40,16 +40,12 @@ main {
     display: flex;
     padding: 15px;
     align-items: center;
-    max-width: 90vw;
+    max-width: 80vw;
 }
-/*
-    max-width: 55vw;
-    display: flex;
-    flex-flow: column wrap;
- */
+
 .textAndImg article{
     width: 70vw;
-    padding: 20px;
+    padding: 0;
 }
 .textAndImg article h1{
     margin-top: 50px;
@@ -61,6 +57,11 @@ main {
     margin-top: 10px;
     padding: 0;
 }
+.specialtext{
+    font-weight: bold;
+    float: right;
+    margin-top:20px;
+}
 
 #Mondo{
     max-width: 40vw;
@@ -68,13 +69,6 @@ main {
     margin-left: 20px;
     margin-top: 50px;
 }
-/*
-    display: flex;
-    margin: 0;
-    padding: 0;
-    max-width: 40vw;
-    float: right;
- */
 
 .mapContainer {
     display: flex;
@@ -160,7 +154,10 @@ a img {
     .content {
         flex-flow: column;
         justify-content: space-between;
-
+    }
+    .textAndImg{
+        flex-flow: column nowrap;
+        justify-content: space-between;
     }
 
     #Mondo {
