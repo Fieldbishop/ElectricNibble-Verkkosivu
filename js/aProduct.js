@@ -17,20 +17,20 @@ function productNum() {
 //Lisää tuote ostoskoriin
 function addToCart() {
     fetch(source)   //Haetaan tuotteen tiedot JSON:ista
-    .then(response => response.json())
-    .then(jsonData => {
+        .then(response => response.json())
+        .then(jsonData => {
         shop.addToCart(jsonData[productNum()]);     //Lisätään se ostoskoriin
         iconCart(); //Päivitetään ostoskorikuvaketta
     });
     return "";
 }
 
-function tuoteSivu(i) {
+function tuoteSivu(i) {                                                         //tuotesivun vaatiman informaation haku jsonista
     const tulos = document.getElementById('tuoteInfoDiv');
     fetch(source)
     .then(response => response.json())
     .then((jsonData) => {
-        let nimi = jsonData[i].name;
+        let nimi = jsonData[i].name;                                            //tuotesivun informaation tallettaminen muutujiin
         let hinta = jsonData[i].price;
         let brand = jsonData[i].brand;
         let desc = jsonData[i].description;
@@ -59,19 +59,19 @@ function tuoteSivu(i) {
         */
 
 
-        let kuva1 = jsonData[i].imageMain;                    //oikeat kuvat
+        let kuva1 = jsonData[i].imageMain;                                      //oikeat kuvat
         let kuva2 = jsonData[i].imageSide;
-        /*let kuva1 = "img/samBot.jpg";                           //placeholder kuvat
+        /*let kuva1 = "img/samBot.jpg";                                         //placeholder kuvat
         let kuva2 = "img/lmmao.jpg";*/
 
 
 
-        let article = document.createElement('article');
+        let article = document.createElement('article');                //tuotesivun luominen dom
 
         let tuoteKuvaSliderDiv = document.createElement('div');
         tuoteKuvaSliderDiv.className = "tuoteKuvaSlider";
 
-        let slideShowContainerDiv = document.createElement('div');
+        let slideShowContainerDiv = document.createElement('div');      // container tuotekuvien slideshowlle
         slideShowContainerDiv.className="slideshow-container";
 
         let tuoteKuvaDiv = document.createElement('div');
@@ -92,9 +92,9 @@ function tuoteSivu(i) {
 
         slideShowContainerDiv.appendChild(tuoteKuvaDiv);
         slideShowContainerDiv.appendChild(tuoteKuvaDiv2);
-
-        slideShowContainerDiv.innerHTML += `
-        <a class=\"prev\" onclick=\"plusSlides(-1)\">&#10094;</a>
+        //innerhtml, jotta sai onclick atribuutin helposti
+        slideShowContainerDiv.innerHTML += `                                    
+        <a class=\"prev\" onclick=\"plusSlides(-1)\">&#10094;</a>               
         <a class=\"next\" onclick=\"plusSlides(1)\">&#10095;</a>`
 
         tuoteKuvaSliderDiv.appendChild(slideShowContainerDiv);
@@ -121,7 +121,7 @@ function tuoteSivu(i) {
         specsTeksti.innerHTML = "Technical info:";
         tekstiDiv.appendChild(specsTeksti);
 
-        let tekninenUL = document.createElement('ul');                              //specsilista
+        let tekninenUL = document.createElement('ul');                  //specsilista ul: category, height, width, depth, +12V, -12V, +5V
         let kategoriaLI = document.createElement('li');
         kategoriaLI.innerHTML = "category: " + category;
         tekninenUL.appendChild(kategoriaLI);
@@ -138,10 +138,10 @@ function tuoteSivu(i) {
         posLI.innerHTML = "+12V: " +spec1+ " mA";
         tekninenUL.appendChild(posLI);
         let negLI = document.createElement('li');
-        negLI.innerHTML = "+12V: " +spec2+ " mA";
+        negLI.innerHTML = "-12V: " +spec2+ " mA";
         tekninenUL.appendChild(negLI);
         let midLI = document.createElement('li');
-        midLI.innerHTML = "+12V: " +spec3+ " mA";
+        midLI.innerHTML = "+5V: " +spec3+ " mA";
         tekninenUL.appendChild(midLI);
         tekstiDiv.appendChild(tekninenUL);
 
@@ -150,7 +150,7 @@ function tuoteSivu(i) {
         hintaTeksti.innerHTML = "Price: " + hinta + " euros"
         tekstiDiv.appendChild(hintaTeksti);
 
-        let ostoskoriNappi = document.createElement('button');
+        let ostoskoriNappi = document.createElement('button');          //lisää ostoskoriin nappi
         ostoskoriNappi.type = "button";
         ostoskoriNappi.innerHTML = "Add to cart"
         ostoskoriNappi.addEventListener('click', addToCart);
@@ -173,26 +173,23 @@ function tuoteSivu(i) {
 tuoteSivu(productNum());
 iconCart();
 
+//slideshow koodi:
 let slideIndex = 1;
 showSlides(slideIndex);
 
-// Next/previous controls
+// Kuvanvaihto
 function plusSlides(n) {
     showSlides(slideIndex += n);
 }
 
-// Thumbnail image controls
-function currentSlide(n) {
-    showSlides(slideIndex = n);
-}
-
+// Kuvan display
 function showSlides(n) {
     let i;
     let slides = document.getElementsByClassName("mySlides");
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
+    if (n > slides.length) {slideIndex = 1}                                     //jos vikassa slideshow kuvassa ja klikkaa oikealle niin menee ekaan
+    if (n < 1) {slideIndex = slides.length}                                     //jos ekassa kuvassa ja klikkaa vasemmalle menee vikaan
+    for (i = 0; i < slides.length; i++) {                                       //piilottaa nykyisen kuvan
         slides[i].style.display = "none";
     }
-    slides[slideIndex-1].style.display = "block";
+    slides[slideIndex-1].style.display = "block";                               //asettaa näkyviin uuden kuvan
 }
