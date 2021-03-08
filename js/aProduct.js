@@ -97,10 +97,10 @@ function tuoteSivu(i) {                                                         
                                                                                 //innerhtml, jotta sai onclick atribuutin helposti
         slideShowContainerDiv.innerHTML += `                                    
         <a class=\"prev\" onclick=\"plusSlides(-1)\">&#10094;</a>               
-        <a class=\"next\" onclick=\"plusSlides(1)\">&#10095;</a>`
+        <a class=\"next\" onclick=\"plusSlides(1)\">&#10095;</a>`;
 
         tuoteKuvaSliderDiv.appendChild(slideShowContainerDiv);
-        tuoteKuvaSliderDiv.innerHTML += "<br>"
+        tuoteKuvaSliderDiv.innerHTML += "<br>";
 
         article.appendChild(tuoteKuvaSliderDiv);
 
@@ -149,12 +149,12 @@ function tuoteSivu(i) {                                                         
 
         let hintaTeksti = document.createElement('p');
         hintaTeksti.className = "hinta";
-        hintaTeksti.innerHTML = "Price: " + hinta + " euros"
+        hintaTeksti.innerHTML = "Price: " + hinta + " euros";
         tekstiDiv.appendChild(hintaTeksti);
 
         let ostoskoriNappi = document.createElement('button');          //lisää ostoskoriin nappi
         ostoskoriNappi.type = "button";
-        ostoskoriNappi.innerHTML = "Add to cart"
+        ostoskoriNappi.innerHTML = "Add to cart";
         ostoskoriNappi.addEventListener('click', addToCart);
         tekstiDiv.appendChild(ostoskoriNappi);
 
@@ -187,8 +187,8 @@ function plusSlides(n) {
 function showSlides(n) {
     let i;
     let slides = document.getElementsByClassName("mySlides");
-    if (n > slides.length) {slideIndex = 1}                                     //jos vikassa slideshow kuvassa ja klikkaa oikealle niin menee ekaan
-    if (n < 1) {slideIndex = slides.length}                                     //jos ekassa kuvassa ja klikkaa vasemmalle menee vikaan
+    if (n > slides.length) {slideIndex = 1};                                    //jos vikassa slideshow kuvassa ja klikkaa oikealle niin menee ekaan
+    if (n < 1) {slideIndex = slides.length};                                    //jos ekassa kuvassa ja klikkaa vasemmalle menee vikaan
     for (i = 0; i < slides.length; i++) {                                       //piilottaa nykyisen kuvan
         slides[i].style.display = "none";
     }
