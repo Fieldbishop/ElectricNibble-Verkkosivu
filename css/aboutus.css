@@ -2,6 +2,7 @@ body, html {
     height: 100%;
     margin: 0;
 }
+
 .nonSticky {
     position: absolute;
     bottom: 0;
@@ -12,11 +13,15 @@ body, html {
     position: fixed;
     top: 0;
 }
+
 #room {
     height: 80px;
     width: 100%;
 }
 
+header{
+    z-index: 1;
+}
 
 main {
     margin-top: 50px;
@@ -32,6 +37,7 @@ main {
     justify-content: center;
     align-items: center;
 }
+
 #esittelyVideo {
     max-width: 80vw;
 }
@@ -47,10 +53,12 @@ main {
     width: 70vw;
     padding: 0;
 }
+
 .textAndImg article h1{
     margin-top: 50px;
     font-family: "Space Mono", serif;
 }
+
 .textAndImg article p{
     font-size: 20px;
     font-family: "Space Mono", serif;
@@ -72,6 +80,7 @@ main {
 
 .mapContainer {
     display: flex;
+    text-align: center;
     flex-flow: row wrap;
     width: 100%;
     justify-content: space-around;
@@ -94,16 +103,6 @@ main {
     margin-top: 0;
 }
 
-#jasenKuvat {
-    width: 320px;
-}
-
-.jasenKuva {
-    width: 150px;
-    margin: 0;
-    padding: 0;
-}
-
 div {
     max-width: 700px;
 }
@@ -121,7 +120,6 @@ div {
     position: relative;
     height: 10%;
     width: 20%;
-    margin-left: 230px;
 }
 
 a img {
@@ -130,77 +128,13 @@ a img {
 
 }
 
-
-@media only screen and (max-width: 768px) {
-    main {
-        width: 100%;
-    }
-
-    header a {
-        font-size: 18px;
-        padding: 20px;
-    }
-
-    header figure{
-        margin-left: 0;
-        margin-right: 0;
-        padding-left: 5px;
-    }
-
-    header{
-        width: 100%;
-    }
-
-    .content {
-        flex-flow: column;
-        justify-content: space-between;
-    }
-    .textAndImg{
-        flex-flow: column nowrap;
-        justify-content: space-between;
-        max-width: 80vw;
-    }
-
-    #Mondo {
-        margin-top: 20px;
-        max-height: 99.76vw;
-        max-width: 80vw;
-    }
-
-    .content article p {
-        margin-left: 0;
-        margin-top: 20px;
-        max-width: 500px;
-    }
-
-    .mapContainer {
-        flex-flow: column;
-    }
-
-    #map {
-        max-width: 400px;
-    }
-
-    #location {
-        margin-left: 150px;
-    }
-
-    .mapContainer article {
-        margin: 0;
-    }
-}
-
-header {
-    z-index: 1000;
-}
-
 .mapboxgl-popup {
     max-width: 50%;
 }
 
 .mapboxgl-popup-content {
     text-align: center;
-    font-family: Space Mono, serif;
+    font-family: "Space Mono", serif;
 }
 
 .marker {
@@ -232,3 +166,54 @@ header {
 .duration {
     font-size: 20px;
 }
+
+
+@media only screen and (max-width: 768px) {
+    main {
+        width: 100%;
+    }
+
+    .content {
+        flex-flow: column;
+        justify-content: space-between;
+    }
+
+    .textAndImg{
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        max-width: 80vw;
+    }
+
+    #Mondo {
+        margin-top: 20px;
+        max-height: 99.76vw;
+        max-width: 80vw;
+    }
+
+    .content article p {
+        margin-left: 0;
+        margin-top: 20px;
+        max-width: 500px;
+    }
+
+    .mapContainer {
+        display: contents;
+        flex-flow: column;
+    }
+
+    #map {
+        max-width: 400px;
+        margin-right: 0;
+    }
+
+    #location {
+       margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .mapContainer article {
+        margin: 0;
+    }
+}
+
+

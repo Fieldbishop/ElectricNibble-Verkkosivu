@@ -38,7 +38,7 @@ aside ul li {
 }
 
 aside ul li:hover {
-    cursor:pointer;
+    cursor: pointer;
     background: #be0000;
     color: white;
 }
@@ -49,7 +49,7 @@ aside ul li:hover {
 }
 
 .notSelected {
-    background: white;
+    background: #000000;
     color: black;
 }
 
@@ -59,6 +59,10 @@ main {
     flex-flow: row wrap;
     justify-content: space-around;
     align-content: space-around;
+}
+
+main::after{
+    margin-bottom: 50px;
 }
 
 main div {
@@ -78,7 +82,7 @@ main div {
     /*overflow: hidden;*/
 }
 
-.product a{
+.product a {
     overflow: hidden;
 }
 
@@ -102,7 +106,7 @@ article figure {
     opacity: 1;
 }
 
-main article p{
+main article p {
     margin-top: 60px;
     font-family: "Space Mono", serif;
     font-size: 16px;
@@ -141,10 +145,37 @@ a img {
     cursor: pointer;
 }
 
+.sidebarB {
+    position: fixed;
+    color: #111111;
+    left: 5px;
+    top: 5px;
+    height: 35px;
+    width: 35px;
+}
 
-@media only screen and (max-width: 768px){
-    main{
+.sidebarB:hover {
+    cursor: pointer;
+    filter: invert(1);
+}
+
+.open{
+    background: #111111;
+}
+
+aside ul{
+    background: white;
+}
+
+@media only screen and (max-width: 768px) {
+    main {
         width: 100%;
+    }
+
+    .product {
+        display: flex;
+        align-items: center;
+        flex-flow: column;
     }
 
     #ye {
@@ -171,17 +202,18 @@ a img {
         bottom: 80%;
         opacity: 1;
     }
-}
 
-.sidebarB {
-    position: fixed;
-    left: 5px;
-    top: 5px;
-    height: 35px;
-    width: 35px;
-}
+    .sidebarB {
+        position: fixed;
+        left: 5px;
+        top: 100px;
+        height: 35px;
+        width: 35px;
+    }
 
-.sidebarB:hover {
-    cursor: pointer;
-    filter: invert(1);
+    .open{
+        left: 0;
+        top: 20%;
+    }
+
 }

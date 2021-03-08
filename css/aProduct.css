@@ -3,24 +3,33 @@ body, html {
     margin: 0;
 }
 
+#tuoteInfoDiv{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
 #tuoteInfoDiv article{
     display: flex;
     justify-content: center;
 
 }
+
+.linkki{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
 #teksti{
     width: 50%;
 }
 
 #teksti a{
-    margin-top: 100px;
+    margin-top: 15%;
     font-size: 20px;
     font-family: "Space Mono", serif;
-    float:right;
-}
-
-#teksti button, .hinta{
-
+    float: right;
+    left: 50%;
 }
 
 ul{
@@ -59,6 +68,11 @@ main{
     max-width: 1000px;
     position: relative;
     margin: auto;
+}
+
+.tuoteKuvaSlider img{
+    height: auto;
+    max-width: 500px;
 }
 
 /* Hide the images by default */
@@ -146,10 +160,78 @@ main{
     from {opacity: .4}
     to {opacity: 1}
 }
+
+
 @media only screen and (max-width: 1170px){
+
     main{
         width: 100%;
     }
 
+    #tuoteInfoDiv{
+        width: auto;
+        display: block;
+        flex-flow: column;
+    }
+
+    #tuoteInfoDiv article{
+        display: block;
+    }
+
+    #teksti{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    #tuoteInfoDiv article h2{
+        margin: 0 auto;
+    }
+
+    #tuoteInfoDiv article p{
+        margin: 0 auto;
+    }
+
+    #tuoteInfoDiv .specs{
+        margin-top: 20px;
+    }
+
+    #tuoteInfoDiv .hinta{
+        margin-top: 20px;
+    }
+
+    ul{
+        margin-top: 10px;
+        margin-left: 0;
+        padding: unset;
+    }
+
+    #tuoteInfoDiv article li{
+        margin: 0 auto;
+        max-width: 300px;
+    }
+
+    #tuoteInfoDiv button{
+        margin-top: 30px;
+        margin-left: 0;
+    }
+
+    #tuoteInfoDiv a{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    #cartIcon img{
+        height: 40px;
+        width: 40px;
+    }
+
+    .slideshow-container{
+        display: flex;
+        justify-content: center;
+    }
 
 }

@@ -29,15 +29,14 @@ header a:hover {
     bottom: 15px;
 }
 
-header figure{
+header figure {
     height: 70px;
 }
 
-#linkit{
+#linkit {
     margin: 0 auto;
     padding-top: 40px;
 }
-
 
 
 footer {
@@ -54,25 +53,25 @@ footer img {
     left: 10px;
 }
 
-footer figure{
+footer figure {
     height: 100px;
     width: 100px;
 
 }
 
-footer article{
+footer article {
     margin: 0;
     height: 50px;
 }
 
-footer article p{
-    font-family: Space Mono, serif;
+footer article p {
+    font-family: "Space Mono", serif;
     font-size: 22px;
     margin-top: 80px;
     height: 100px;
 }
 
-#nimet{
+#nimet {
     position: relative;
     margin-right: 0;
     margin-left: auto;
@@ -81,52 +80,8 @@ footer article p{
 }
 
 
-#nimet p{
+#nimet p {
     font-size: 18px;
-}
-
-@media only screen and (max-width: 1170px){
-
-    header a {
-        font-size: 18px;
-        padding: 20px;
-    }
-
-    header figure{
-        margin-left: 10px;
-        margin-right: 0;
-    }
-
-    header{
-        width: 100%;
-    }
-
-    footer{
-        width: 100%;
-    }
-
-    footer figure {
-        margin: 0;
-    }
-
-    footer img{
-        max-height: 80px;
-        top:50px;
-    }
-
-    footer article p{
-        font-family: Space Mono, serif;
-        font-size: 18px;
-        margin-left: 0;
-        margin-top: 80px;
-        height: 100px;
-    }
-
-    #nimet p{
-        font-size: 15px;
-        margin-left: auto;
-        margin-right: 0;
-    }
 }
 
 #cartIcon {
@@ -144,22 +99,84 @@ footer article p{
     width: 50px;
 }
 
-#cartIcon:hover img{
+#cartIcon:hover img {
     filter: invert(1);
 }
 
 .circle {
     position: fixed;
-    right: 3vw;
-    top: 3vw;
+    right: 3%;
+    top: 4%;
     border-radius: 50%;
     height: 20px;
     width: 20px;
-    background: #be0000;
+    background: #ffe674;
     border: #111111 solid 2px;
 }
 
 .circle p {
-    font-family: Space Mono, serif;
+    text-align: center;
+    font-family: "Space Mono", serif;
+    font-size: 13px;
+    font-weight: bold;
     margin: 0;
 }
+
+@media only screen and (max-width: 1170px) {
+
+    header a {
+        font-size: 18px;
+        padding: 20px;
+    }
+
+    header figure {
+        margin-left: 10px;
+        margin-right: 0;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    footer figure {
+        margin: 0;
+    }
+
+    footer img {
+        max-height: 80px;
+        top: 50px;
+    }
+
+    footer article p {
+        font-family: "Space Mono", serif;
+        font-size: 18px;
+        margin-left: 0;
+        margin-top: 80px;
+        height: 100px;
+    }
+
+    #nimet p {
+        font-size: 15px;
+        margin-left: auto;
+        margin-right: 0;
+    }
+
+    #cartIcon img {
+        height: 40px;
+        width: 40px;
+    }
+
+    #cartIcon:hover img {
+        filter: invert(1);
+    }
+
+    .circle p {
+        font-family: "Space Mono", serif;
+        margin: 0;
+    }
+}
+
