@@ -158,12 +158,13 @@ a img {
     .textAndImg{
         flex-flow: column nowrap;
         justify-content: space-between;
+        max-width: 80vw;
     }
 
     #Mondo {
-        margin: 0;
-        max-height: 70%;
-        max-width: 70%;
+        margin-top: 20px;
+        max-height: 99.76vw;
+        max-width: 80vw;
     }
 
     .content article p {
