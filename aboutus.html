@@ -5,16 +5,17 @@
         <title>Title</title>
         <link href="./css/aboutus.css" rel="stylesheet">
         <link href="css/HeadFoot.css" rel="stylesheet">
-        <link href='https://fonts.googleapis.com/css?family=BioRhyme|Space Mono' rel='stylesheet'>
-        <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+        <link href='https://fonts.googleapis.com/css?family=BioRhyme' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Space%20Mono' rel='stylesheet'>
+        <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no'/>
         <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
-        <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+        <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet'/>
     </head>
     <body>
 
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-            integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-            crossorigin=""></script>
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+                integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+                crossorigin=""></script>
 
         <main>
 
@@ -27,9 +28,13 @@
                 <div class="textAndImg">
                     <article>
                         <h1>Mondo's Modules</h1>
-                        <p>Mondo's Modules is an experienced Eurorack modular synthesizer parts retailer in Karamalmi, Espoo. We offer the most diverse supply in Northern Europe with competitive prices.</p>
-                        <p>Our company's idol, Mondo Maverick, was a Finnish electornic music pioneer who achieved global fame in the 80'. Mondo never took the easy way out in anything he did in his life, rather he lived completely according to his own values.</p>
-                        <p>Mondo's Modules is a family business established in 2020. Our values and outlook on life are based on our respectable father Mondo Maverick.</p>
+                        <p>Mondo's Modules is an experienced Eurorack modular synthesizer parts retailer in Karamalmi,
+                            Espoo. We offer the most diverse supply in Northern Europe with competitive prices.</p>
+                        <p>Our company's idol, Mondo Maverick, was a Finnish electornic music pioneer who achieved
+                            global fame in the 80'. Mondo never took the easy way out in anything he did in his life,
+                            rather he lived completely according to his own values.</p>
+                        <p>Mondo's Modules is a family business established in 2020. Our values and outlook on life are
+                            based on our respectable father Mondo Maverick.</p>
                         <p class="specialtext">We offer you "the keys to the Ferrari" rest is up to you!</p>
                     </article>
                     <img id="Mondo" src="./img/mondoEdit.jpg" alt="Picture of Mondo">
@@ -50,7 +55,9 @@
                 </article>
 
                 <div>
-                    <div id="map"><div id="instructions"></div></div>
+                    <div id="map">
+                        <div id="instructions"></div>
+                    </div>
                     <button id="location">Calculate trip</button>
                 </div>
             </figure>
@@ -62,21 +69,19 @@
             <figure id="linkit">
                 <a href="./index.html">Home</a>
                 <a href="./products.html">Products</a>
-                <a href="#about">About us</a>
+                <a>About us</a>
             </figure>
         </header>
 
 
         <footer>
             <figure><img alt="logo" src="./img/logo2.png"></figure>
-            <article>
-                <p>Electric nibble</p>
-            </article>
-            <article id="nimet">
+            <p>Electric Nibble</p>
+            <aside id="foot">
                 <p>Sampo Bredenberg <br/> Jaakko Nahkala <br/> Lassi Piispanen <br/> Niklas Kukkonen</p>
-            </article>
+            </aside>
         </footer>
 
-    <script src="js/map.js"></script>
+        <script src="js/map.js"></script>
     </body>
 </html>

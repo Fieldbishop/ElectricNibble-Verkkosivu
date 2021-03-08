@@ -8,7 +8,8 @@ body, html {
     top: 0;
 }
 
-aside {
+
+#sidebar {
     display: flex;
     flex-direction: column;
     position: fixed;
@@ -22,22 +23,23 @@ aside {
     font-family: Space Mono, serif;
 }
 
-.open {
+.open#sidebar {
     left: 0;
 }
 
-aside ul {
+ul {
+    background: white;
     list-style: none;
     padding: 4px;
 }
 
-aside ul li {
+ul li {
     padding: 5px;
     margin: 2px;
     border: #111111 1px solid;
 }
 
-aside ul li:hover {
+ul li:hover {
     cursor: pointer;
     background: #be0000;
     color: white;
@@ -163,10 +165,6 @@ a img {
     background: #111111;
 }
 
-aside ul{
-    background: white;
-}
-
 @media only screen and (max-width: 768px) {
     main {
         width: 100%;
@@ -211,7 +209,7 @@ aside ul{
         width: 35px;
     }
 
-    .open{
+    .open#sidebar{
         left: 0;
         top: 20%;
     }
