@@ -1,5 +1,11 @@
 # Changelog
 
+## 8.3.2021
+**Kartta**
+- Toteutettu suunnan haku
+- ISS:lle oma ikoni
+
+
 ## 7.3.2021
 **Tyylittely**
 - Muutettu tyylittelyä
@@ -20,6 +26,7 @@
 
 **Kartta**
 - Kartta näyttää nyt myös ISS:n tämän hetkisen paikan kartalla
+- Siirrytty Google Mapsista Leaflet ja Mapboxiin
 
 **Kansiorakenne**
 - Valmisteltu lopullinen kansiorakenne
