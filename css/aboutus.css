@@ -2,7 +2,6 @@ body, html {
     height: 100%;
     margin: 0;
 }
-
 .nonSticky {
     position: absolute;
     bottom: 0;
@@ -13,83 +12,69 @@ body, html {
     position: fixed;
     top: 0;
 }
-
-header a {
-    color: #111111;
-    text-align: center;
-    text-decoration: none;
-    display: inline;
-    padding-right: 100px;
-    padding-left: 100px;
-    font-family: BioRhyme, serif;
-    font-size: 28px;
-}
-
-header a:hover {
-    background-color: black;
-    color: aliceblue;
-
-}
-
-#logo {
-    max-height: 80px;
-    margin: 0 auto;
-}
-
-header figure{
-    max-height: 80px;
-    margin: 5px;
-    padding-left: 35px;
-}
-
-#linkit{
-    margin: 0 auto;
-    padding-top: 23px;
-}
-
 #room {
     height: 80px;
     width: 100%;
 }
 
+
 main {
     margin-top: 50px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
 }
+
 .content{
-    width: 100%;
     display: flex;
-    flex-flow: row;
-    justify-content: space-around;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
 }
-.content figure{
-
-
-}
-#Mondo{
-    margin-top: 0;
-    margin-left: 0;
-    max-height: 35vw;
-}
-
 #esittelyVideo {
-    max-height: 35vw;
-    width: 50%;
+    max-width: 80vw;
 }
 
-.content p {
-    width: 1000px;
-    font-size: 20px;
-    font-family: "Space Mono", serif;
-    margin-top: 0;
+.textAndImg{
+    position: relative;
+    width: 100vw;
+    display: flex;
+    padding: 15px;
+    margin: 15px;
+    align-items: center;
 }
-
-main figure h1 {
+/*
+    max-width: 55vw;
+    display: flex;
+    flex-flow: column wrap;
+ */
+.textAndImg article{
+    width: 70vw;
+}
+.textAndImg article h1{
     margin-top: 50px;
     font-family: "Space Mono", serif;
 }
+.textAndImg article p{
+    font-size: 20px;
+    font-family: "Space Mono", serif;
+    margin-top: 10px;
+    padding: 0;
+}
+
+#Mondo{
+    max-width: 20vw;
+    max-height: 25vw;
+    padding-left: 20px;
+}
+/*
+    display: flex;
+    margin: 0;
+    padding: 0;
+    max-width: 40vw;
+    float: right;
+ */
 
 .mapContainer {
     display: flex;
@@ -97,7 +82,6 @@ main figure h1 {
     width: 100%;
     justify-content: space-around;
     margin-top: 100px;
-
 }
 
 .mapContainer h1 {
