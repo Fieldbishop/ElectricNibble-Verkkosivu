@@ -105,18 +105,26 @@ div {
 }
 
 #map {
+    float:right;
     display: inline-block;
     height: 400px;
     width: 600px;
-    margin-right: 50px;
     margin-top: 20px;
 
+}
+
+#yhteysTiedot{
+    margin-left: 1%;
+    text-align: start;
 }
 
 #location {
     position: relative;
     height: 10%;
     width: 20%;
+    margin-top:5%;
+    margin-left: 10%;
+    margin-bottom: 2%;
 }
 
 a img {
@@ -202,6 +210,7 @@ h2{
     }
 
     #map {
+        float: inherit;
         max-width: 400px;
         margin-right: 0;
     }
@@ -213,6 +222,15 @@ h2{
 
     .mapContainer aside {
         margin: 0;
+    }
+
+    #yhteysTiedot{
+        width: 80%;
+    }
+
+    div{
+        margin-left: 0;
+        max-width: 100%;
     }
 }
 

@@ -64,7 +64,8 @@ main {
 }
 
 main::after{
-    margin-bottom: 50px;
+    content: '';
+    margin-bottom: 36%;
 }
 
 main div {
