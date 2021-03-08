@@ -211,3 +211,42 @@ a img {
 header {
     z-index: 1000;
 }
+
+.mapboxgl-popup {
+    max-width: 50%;
+}
+
+.mapboxgl-popup-content {
+    text-align: center;
+    font-family: Space Mono, serif;
+}
+
+.marker {
+    background-image: url('../img/logo2.png');
+    background-size: cover;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.iss {
+    background-image: url('../img/iss.png');
+}
+
+#instructions {
+    position: relative;
+    margin: 20px;
+    width: 25%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    line-height: 2em;
+    overflow-y: scroll;
+    font-family: Space Mono, serif;
+    z-index: 1;
+    max-height: 50%;
+}
+
+.duration {
+    font-size: 20px;
+}

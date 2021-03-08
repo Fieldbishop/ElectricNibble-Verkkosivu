@@ -1,5 +1,11 @@
 # Changelog
 
+## 8.3.2021
+**Kartta**
+- Toteutettu suunnan haku
+- ISS:lle oma ikoni
+
+
 ## 7.3.2021
 **Tyylittely**
 - Muutettu tyylittelyä
