@@ -3,6 +3,11 @@ body, html {
     margin: 0;
 }
 
+.content{
+    border: solid black 2px;
+    margin-bottom: 40px;
+
+}
 .nonSticky {
     position: absolute;
     bottom: 0;
@@ -80,51 +85,56 @@ main {
 
 .mapContainer {
     display: flex;
+    padding: 15px;
+    align-items: center;
+    max-width: 80vw;
     text-align: center;
     flex-flow: row wrap;
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 100px;
 }
 
 .mapContainer h1 {
+    margin: 0;
+    padding: 0;
     font-size: 25px;
     font-family: "Space Mono", serif;
 }
 
 
 .mapContainer p {
-    margin-left: 0;
+    margin: 0;
+    padding: 0;
     font-size: 20px;
     font-family: "Space Mono", serif;
-    margin-top: 0;
 }
 
-div {
-    max-width: 700px;
+#mapAndButton {
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+    margin: 0;
+    padding: 0;
+    float:right;
+    width: 40vw;
+    height: 30vw;
 }
 
 #map {
-    float:right;
-    display: inline-block;
-    height: 400px;
-    width: 600px;
-    margin-top: 20px;
-
+    width: 40vw;
+    height: 30vw;
 }
 
 #yhteysTiedot{
-    margin-left: 1%;
-    text-align: start;
+    text-align: left;
+    margin-bottom: 40px;
 }
 
 #location {
-    position: relative;
-    height: 10%;
-    width: 20%;
-    margin-top:5%;
-    margin-left: 10%;
-    margin-bottom: 2%;
+    margin-top: 10px;
+    height: 40px;
+    width: 100px;
 }
 
 a img {
@@ -175,63 +185,89 @@ a img {
 h2{
     font-family: "Space Mono", serif;
 }
+@media only screen and (max-width: 1350px) {
+    @media only screen and (max-width: 768px) {
+        main {
+            width: 100%;
+        }
 
-@media only screen and (max-width: 768px) {
-    main {
-        width: 100%;
-    }
+        .content {
+            flex-flow: column;
+            justify-content: space-between;
+        }
 
-    .content {
-        flex-flow: column;
-        justify-content: space-between;
-    }
+        .textAndImg{
+            flex-flow: column nowrap;
+            justify-content: space-between;
+            max-width: 80vw;
+        }
 
-    .textAndImg{
-        flex-flow: column nowrap;
-        justify-content: space-between;
-        max-width: 80vw;
-    }
+        #Mondo {
+            margin-top: 20px;
+            max-height: 99.76vw;
+            max-width: 80vw;
+        }
 
-    #Mondo {
-        margin-top: 20px;
-        max-height: 99.76vw;
-        max-width: 80vw;
-    }
+        .content article p {
+            margin-left: 0;
+            margin-top: 20px;
+            max-width: 500px;
+        }
 
-    .content article p {
-        margin-left: 0;
-        margin-top: 20px;
-        max-width: 500px;
+        .mapContainer {
+            display: contents;
+            flex-flow: column;
+        }
+
+
+
+        #location {
+            margin-left: 0;
+            margin-top: 10px;
+        }
+
+        .mapContainer aside {
+            margin: 0;
+        }
+
+        #yhteysTiedot{
+            width: 80%;
+        }
+
+        div{
+            margin-left: 0;
+            max-width: 100%;
+        }
     }
 
     .mapContainer {
-        display: contents;
-        flex-flow: column;
+        display: flex;
+        padding: 15px;
+        align-items: center;
+        max-width: 80vw;
+        text-align: center;
+        flex-flow: column wrap;
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    #mapAndButton {
+        margin: 0;
+        padding: 0;
+        width: 80vw;
+        height: 60vw;
     }
 
     #map {
-        float: inherit;
-        max-width: 400px;
-        margin-right: 0;
-    }
-
-    #location {
-        margin-left: 0;
-        margin-top: 10px;
-    }
-
-    .mapContainer aside {
-        margin: 0;
+        width: 80vw;
+        height: 60vw;
     }
 
     #yhteysTiedot{
-        width: 80%;
-    }
-
-    div{
-        margin-left: 0;
-        max-width: 100%;
+        text-align: center;
+        margin-bottom: 40px;
     }
 }
+
 
 
