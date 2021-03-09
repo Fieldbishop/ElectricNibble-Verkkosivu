@@ -53,7 +53,6 @@ main {
 }
 
 .textAndImg article{
-    width: 70vw;
     padding: 0;
 }
 
@@ -185,56 +184,17 @@ h2{
 }
 @media only screen and (max-width: 1350px) {
     @media only screen and (max-width: 768px) {
-        main {
-            width: 100%;
-        }
 
-        .content {
-            flex-flow: column;
-            justify-content: space-between;
-        }
 
         .textAndImg{
-            flex-flow: column nowrap;
-            justify-content: space-between;
-            max-width: 80vw;
+            flex-flow: column wrap;
+            width: 80vw;
         }
 
         #Mondo {
-            margin-top: 20px;
+            margin: 20px 0 0 0;
             max-height: 99.76vw;
             max-width: 80vw;
-        }
-
-        .content article p {
-            margin-left: 0;
-            margin-top: 20px;
-            max-width: 500px;
-        }
-
-        .mapContainer {
-            display: contents;
-            flex-flow: column;
-        }
-
-
-
-        #location {
-            margin-left: 0;
-            margin-top: 10px;
-        }
-
-        .mapContainer aside {
-            margin: 0;
-        }
-
-        #yhteysTiedot{
-            width: 80%;
-        }
-
-        div{
-            margin-left: 0;
-            max-width: 100%;
         }
     }
 
@@ -250,8 +210,6 @@ h2{
         margin-top: 10px;
     }
     #mapAndButton {
-        margin: 0;
-        padding: 0;
         width: 80vw;
         height: 60vw;
     }
@@ -263,7 +221,6 @@ h2{
 
     #yhteysTiedot{
         text-align: center;
-        margin-bottom: 40px;
     }
 }
 
