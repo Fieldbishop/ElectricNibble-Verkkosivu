@@ -492,5 +492,25 @@
     "imageMain": "img/products/PrismMain.jpg",
     "imageSide": "img/products/PrismSide.jpg",
     "url": "https://www.qubitelectronix.com/shop/prism"
+  },
+  {
+    "name": "DVCA",
+    "brand": "Antumbra",
+    "price": 95.00,
+    "description": "Dual VCA based on Mutable Instruments Veils. Two channels each with input, CV input and output. Left channel output is normalized to right channel output if no patch cable is inserted into it's out-socket, so can be used as a rudimentary mixer. CV response selectable via potentiometer that changes it from linear to exponential.",
+    "category": "VCA,",
+    "specs":
+    {
+      "aPos": 17,
+      "aNeg": 17,
+      "aPosSmall": 0,
+      "depth": 20,
+      "width": 4,
+      "height": 3
+    },
+    "imageMain": "img/products/DVCAMain.jpg",
+    "imageSide": "img/products/DVCASide.jpg",
+    "url": "https://www.antumbra.eu/redesign/dvca"
+
   }
 ]
