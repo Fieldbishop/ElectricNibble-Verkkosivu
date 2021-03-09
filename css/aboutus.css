@@ -42,7 +42,8 @@ main {
 }
 
 #esittelyVideo {
-    max-width: 80vw;
+    width: 80vw;
+    height: 45vw;
 }
 
 .textAndImg{
