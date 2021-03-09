@@ -4,9 +4,7 @@ body, html {
 }
 
 .content{
-    border: solid black 2px;
     margin-bottom: 40px;
-
 }
 .nonSticky {
     position: absolute;
