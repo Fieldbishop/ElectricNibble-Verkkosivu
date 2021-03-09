@@ -44,7 +44,7 @@ function tuoteSivu(i) {                                                         
         let spec6 = jsonData[i].specs.height;
 
         /*
-        console.log(nimi);
+        console.log(nimi);                                                      testi console logit
         console.log(hinta);
         console.log(brand);
         console.log(desc);
@@ -76,10 +76,11 @@ function tuoteSivu(i) {                                                         
 
         let tuoteKuvaDiv = document.createElement('div');
         tuoteKuvaDiv.className = "mySlides fade";
-        tuoteKuvaDiv.style="display: block;";
+        tuoteKuvaDiv.style="display: none;";
         let img1 = document.createElement('img');
         img1.style="width:100%";
         img1.src=kuva1;
+        img1.alt="Main picture of "+nimi;
         tuoteKuvaDiv.appendChild(img1);
 
         let tuoteKuvaDiv2 = document.createElement('div');
@@ -88,17 +89,18 @@ function tuoteSivu(i) {                                                         
         let img2 = document.createElement('img');
         img2.style="width:100%";
         img2.src=kuva2;
+        img2.alt="Secondary picture of "+nimi;
         tuoteKuvaDiv2.appendChild(img2);
 
         slideShowContainerDiv.appendChild(tuoteKuvaDiv);
         slideShowContainerDiv.appendChild(tuoteKuvaDiv2);
-        //innerhtml, jotta sai onclick atribuutin helposti
+                                                                                //innerhtml, jotta sai onclick atribuutin helposti
         slideShowContainerDiv.innerHTML += `                                    
         <a class=\"prev\" onclick=\"plusSlides(-1)\">&#10094;</a>               
-        <a class=\"next\" onclick=\"plusSlides(1)\">&#10095;</a>`
+        <a class=\"next\" onclick=\"plusSlides(1)\">&#10095;</a>`;
 
         tuoteKuvaSliderDiv.appendChild(slideShowContainerDiv);
-        tuoteKuvaSliderDiv.innerHTML += "<br>"
+        tuoteKuvaSliderDiv.innerHTML += "<br>";
 
         article.appendChild(tuoteKuvaSliderDiv);
 
@@ -147,12 +149,12 @@ function tuoteSivu(i) {                                                         
 
         let hintaTeksti = document.createElement('p');
         hintaTeksti.className = "hinta";
-        hintaTeksti.innerHTML = "Price: " + hinta + " euros"
+        hintaTeksti.innerHTML = "Price: " + hinta + " euros";
         tekstiDiv.appendChild(hintaTeksti);
 
         let ostoskoriNappi = document.createElement('button');          //lisää ostoskoriin nappi
         ostoskoriNappi.type = "button";
-        ostoskoriNappi.innerHTML = "Add to cart"
+        ostoskoriNappi.innerHTML = "Add to cart";
         ostoskoriNappi.addEventListener('click', addToCart);
         tekstiDiv.appendChild(ostoskoriNappi);
 
@@ -165,7 +167,6 @@ function tuoteSivu(i) {                                                         
 
         article.appendChild(tekstiDiv);
         tulos.appendChild(article);
-
 
     });
 }
@@ -186,8 +187,8 @@ function plusSlides(n) {
 function showSlides(n) {
     let i;
     let slides = document.getElementsByClassName("mySlides");
-    if (n > slides.length) {slideIndex = 1}                                     //jos vikassa slideshow kuvassa ja klikkaa oikealle niin menee ekaan
-    if (n < 1) {slideIndex = slides.length}                                     //jos ekassa kuvassa ja klikkaa vasemmalle menee vikaan
+    if (n > slides.length) {slideIndex = 1};                                    //jos vikassa slideshow kuvassa ja klikkaa oikealle niin menee ekaan
+    if (n < 1) {slideIndex = slides.length};                                    //jos ekassa kuvassa ja klikkaa vasemmalle menee vikaan
     for (i = 0; i < slides.length; i++) {                                       //piilottaa nykyisen kuvan
         slides[i].style.display = "none";
     }

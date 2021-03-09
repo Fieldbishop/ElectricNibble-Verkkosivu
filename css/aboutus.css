@@ -105,18 +105,26 @@ div {
 }
 
 #map {
+    float:right;
     display: inline-block;
     height: 400px;
     width: 600px;
-    margin-right: 50px;
     margin-top: 20px;
 
+}
+
+#yhteysTiedot{
+    margin-left: 1%;
+    text-align: start;
 }
 
 #location {
     position: relative;
     height: 10%;
     width: 20%;
+    margin-top:5%;
+    margin-left: 10%;
+    margin-bottom: 2%;
 }
 
 a img {
@@ -164,6 +172,9 @@ a img {
     font-size: 20px;
 }
 
+h2{
+    font-family: "Space Mono", serif;
+}
 
 @media only screen and (max-width: 768px) {
     main {
@@ -199,17 +210,27 @@ a img {
     }
 
     #map {
+        float: inherit;
         max-width: 400px;
         margin-right: 0;
     }
 
     #location {
-       margin-left: 0;
+        margin-left: 0;
         margin-top: 10px;
     }
 
-    .mapContainer article {
+    .mapContainer aside {
         margin: 0;
+    }
+
+    #yhteysTiedot{
+        width: 80%;
+    }
+
+    div{
+        margin-left: 0;
+        max-width: 100%;
     }
 }
 
